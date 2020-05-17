@@ -60,12 +60,14 @@ section {
 
 /* Menu Styling */
 nav {
-  background: #bb0016;
+  background: var(--secondary-color);
   width: 175px;
   position: fixed;
   margin: 0px;
   top: 30px;
   z-index: 30;
+  left: 0px;
+  transition: all 1s ease-in-out;
 }
 
 nav ul li:not(:first-child) {
@@ -88,4 +90,39 @@ nav ul li a:hover,
 nav ul li a.active {
   color: #fb7e8d;
   cursor: pointer;
+}
+
+nav .close-btn {
+  width: 14px;
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  cursor: pointer;
+}
+
+nav .show-btn {
+  width: 30px;
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  opacity: 0;
+  text-align: center;
+  padding-top: 5px;
+  transition: opacity 0.5s;
+}
+
+nav .show-btn img {
+  width: 20px;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    left: -175px;
+  }
+  nav .show-btn {
+    opacity: 1;
+    right: -30px;
+  }
 }
