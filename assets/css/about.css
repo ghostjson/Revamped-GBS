@@ -1,137 +1,162 @@
-.about-banner{
-    align-items: flex-start !important;
+.about-banner {
+  align-items: flex-start !important;
 }
 
 /* Upper part of about page */
-.upper-about-banner{
-    height: 50vh;
-    background-image: url('../images/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.upper-about-banner {
+  height: 50vh;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.heading{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 3em;
-    color: white;
-    margin-bottom: 30px;
-    text-shadow: 0px 1px 9px #ffda96ce;
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 0px 1px 9px #ffda96ce;
 }
 
-.lower-about-banner{
-    font-size: 1.2em;
+.lower-about-banner {
+  font-size: 1.2em;
 }
 
 .lower-about-banner p {
-    margin: 30px;
+  margin: 30px;
 }
 
 /* Vision */
-.vision{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 300px;
+.vision {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 0px 300px;
+  width: 100%;
 }
 
-.vision .box-vision{
-    text-align: center;
-    margin: 30px;
+.vision .box-vision {
+  text-align: center;
+  margin: 30px;
 }
 
-.vision .thumbnail img{
-    width: 200px;
-    height: 200px;
+.vision .thumbnail img {
+  width: 200px;
+  height: 200px;
 }
 
-.vision p{
-    font-size: 1.2em;
-    text-align: left;
+.vision p {
+  font-size: 1.2em;
+  text-align: left;
 }
 
-.vision .content-vision{
-    position: relative;
-    display: flex;
-    margin-top: 10px;
+.vision .content-vision {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
 }
 
-.vision .content-vision img{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 30px;
+.vision .content-vision img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 30px;
 }
 
 /* Approach */
-.approach{
-    text-align: center;
+.approach {
+  text-align: center;
 }
 
-.heading-approach{
-    padding: 40px;
-    font-size: 1.4em;
+.heading-approach {
+  padding: 40px;
+  font-size: 1.4em;
 }
 
-.approach .box{
-    margin-top: 30px;
-    padding: 15px;
-    text-align: left;
+.approach .box {
+  margin-top: 30px;
+  padding: 15px;
+  text-align: left;
 }
 
-.approach .box h3{
-    font-size: 1.2em;
-    text-transform: uppercase;
+.approach img {
+  width: inherit;
 }
 
-.approach .box p{
-    font-size: 1.1em;
-    margin-top: 10px;
-    padding-right: 50px;
-    line-height: 25px;
+.approach .box h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 
-.credentials{
-    text-align: center;
+.approach .box p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  padding-right: 50px;
+  line-height: 25px;
 }
 
-.credentials h2{
-    padding: 40px;
-    font-size: 1.8em;
+.credentials {
+  text-align: center;
+}
+
+.credentials h2 {
+  padding: 40px;
+  font-size: 1.8em;
 }
 
 /* Credentials */
-.credentials .image{
-    height: 320px;
-    background: #4c595f;
+.credentials .image {
+  height: 320px;
+  background: #4c595f;
 }
 
-.credentials p{
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
+.credentials p {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
 }
 
 /* map */
 
-.map{
-    text-align: center;
+.map {
+  text-align: center;
 }
 
-.map h2{
-    margin: 50px auto;
-    text-transform: uppercase;
+.map h2 {
+  margin: 50px auto;
+  text-transform: uppercase;
 }
 
-.map img{
-    width: inherit;
+.map img {
+  width: inherit;
 }
 
-.map ul li{
-    font-size: 1.1em;
-    font-family: font-normal;
-    font-weight: bolder;
-    color: #527f92;
+.map ul li {
+  font-size: 1.1em;
+  font-family: font-normal;
+  font-weight: bolder;
+  color: #527f92;
+}
+
+@media (max-width: 1000px) {
+  section {
+    height: initial !important;
+  }
+
+  .vision {
+    padding: 0px;
+    height: initial;
+  }
+
+  .map-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .map-list ul li {
+    padding: 5px;
+  }
 }
