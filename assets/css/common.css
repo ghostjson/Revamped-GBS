@@ -1,0 +1,45 @@
+/* Reset Default Browser Properties */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Gloabl variables */
+:root{
+    --primary-color: #2a2a2c;
+    --secondary-color: #b9001b;
+}
+
+
+/* Fonts */
+@font-face {
+  font-family: font-head;
+  src: url("./../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: font-normal;
+  src: url("./../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+}
+
+/* set body defaults */
+body{
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Set default fonts */
+h1,h2,h3,h4,h5,h6{
+    font-family: font-head;
+}
+p,div,section{
+    font-family: font-normal;
+}
+
+/* full height properity */
+.full-height {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
