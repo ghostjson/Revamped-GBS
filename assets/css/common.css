@@ -5,12 +5,19 @@
   box-sizing: border-box;
 }
 
-/* Gloabl variables */
-:root{
-    --primary-color: #2a2a2c;
-    --secondary-color: #b9001b;
+a,
+a:visited,
+a:active,
+a:hover {
+  color: black;
+  text-decoration: none;
 }
 
+/* Gloabl variables */
+:root {
+  --primary-color: #2a2a2c;
+  --secondary-color: #b9001b;
+}
 
 /* Fonts */
 @font-face {
@@ -23,17 +30,24 @@
 }
 
 /* set body defaults */
-body{
-    background: var(--primary-color);
-    color: white;
+body {
+  background: var(--primary-color);
+  color: white;
 }
 
 /* Set default fonts */
-h1,h2,h3,h4,h5,h6{
-    font-family: font-head;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: font-head;
 }
-p,div,section{
-    font-family: font-normal;
+p,
+div,
+section {
+  font-family: font-normal;
 }
 
 /* full height properity */
@@ -42,4 +56,36 @@ p,div,section{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Menu Styling */
+nav {
+  background: #bb0016;
+  width: 175px;
+  position: fixed;
+  margin: 0px;
+  top: 30px;
+  z-index: 30;
+}
+
+nav ul li:not(:first-child) {
+  border-bottom: 1px solid white;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: font-normal;
+  font-weight: bolder;
+}
+
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:active {
+  color: white;
+  transition: color 0.5s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fb7e8d;
+  cursor: pointer;
 }

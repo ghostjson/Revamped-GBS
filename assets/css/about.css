@@ -1,3 +1,7 @@
+.about-banner{
+    align-items: flex-start !important;
+}
+
 /* Upper part of about page */
 .upper-about-banner{
     height: 50vh;
