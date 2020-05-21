@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GBS</title>
+
+
+    <!-- Jqeury -->
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Common Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/common.css" />
+
+    <!-- About Page Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body>
+
+    <nav class="menu">
+      <div class="close-btn">
+        <img src="./assets/icons/times-solid.svg" alt="hide">
+      </div>
+      <div class="show-btn">
+        <img src="./assets/icons/bars-solid.svg" alt="show">
+      </div>
+      <ul>
+        <li>
+            <a href="/"><img src="./assets/images/logo.jpg" alt="logo"></a>
+        </li>
+        <li>
+         <a href="/about.html">ABOUT US</a>
+        </li>
+        <li>
+            <a href="#">SOLUTIONS</a>
+        </li>
+        <li>
+            <a href="#">UPDATES</a>
+        </li>
+        <li>
+            <a href="/contact.html" class="active">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="contact-banner">
+            <div class="container-fluid">
+              <div class="row upper-contact-banner">
+                <div class="col heading">
+                  <h2>CONTACT GBS</h2>
+                </div>
+              </div>
+              <div class="row lower-about-banner">
+                <div class="col">
+                        <div class="container animated fadeIn">
+                                <div class="row">
+                                  <div class="col-sm-12" id="parent">
+                                    <div class="col-sm-6">
+                                      <iframe
+                                        width="100%"
+                                        height="320px;"
+                                        frameborder="0"
+                                        style="border:0"
+                                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY"
+                                        allowfullscreen
+                                      ></iframe>
+                                    </div>
+                          
+                                    <div class="col-sm-6">
+                                      <form action="form.php" class="contact-form" method="post">
+                                        <div class="form-group">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            id="name"
+                                            name="name"
+                                            placeholder="Name"
+                                            required
+                                          />
+                                        </div>
+                                        <div class="form-group">
+                                          <input
+                                            type="tel"
+                                            class="form-control"
+                                            id="contact"
+                                            name="contact"
+                                            placeholder="Contact Number"
+                                            required
+                                          />
+                                        </div>
+                          
+                                        <div class="form-group form_left">
+                                          <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            required
+                                          />
+                                        </div>
+                          
+                                        <div class="form-group form_left">
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            id="company"
+                                            name="company"
+                                            placeholder="Company"
+                                            required
+                                          />
+                                        </div>
+                                        <div class="form-group">
+                                          <textarea
+                                            class="form-control textarea-contact"
+                                            rows="5"
+                                            id="comment"
+                                            name="FB"
+                                            placeholder="Type Your Message here..."
+                                            required=""
+                                          ></textarea>
+                                          <br />
+                                          <button class="btn btn-default btn-send"> Send
+                                          </button>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+              </div>
+            </div>
+          </section>
+
+
+  </body>
+</html>

@@ -70,6 +70,10 @@ nav {
   transition: all 1s ease-in-out;
 }
 
+nav ul {
+  margin-bottom: 0px;
+}
+
 nav ul li:not(:first-child) {
   border-bottom: 1px solid white;
   height: 30px;
@@ -111,6 +115,7 @@ nav .show-btn {
   text-align: center;
   padding-top: 5px;
   transition: opacity 0.5s;
+  padding-top: 0px !important;
 }
 
 nav .show-btn img {

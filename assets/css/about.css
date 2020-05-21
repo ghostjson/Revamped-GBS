@@ -159,4 +159,8 @@
   .map-list ul li {
     padding: 5px;
   }
+
+  .map-row {
+    flex-direction: column-reverse;
+  }
 }
