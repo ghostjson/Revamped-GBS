@@ -47,6 +47,7 @@ body{
     font-size: 7em;
     bottom: 180px;
     left: 100px;
+    font-family: font-banner !important;
 }
 
 .banner-1 > p{
@@ -62,6 +63,7 @@ body{
     position: absolute;
     bottom: 250px;
     left: 200px;
+    font-family: font-banner !important;
 }
 
 .banner-2 > p{
@@ -96,7 +98,7 @@ body{
 }
 
 .highlight{
-    font-family: font-head;
+    font-family: font-banner !important;
     font-size: 2em;
 }
 

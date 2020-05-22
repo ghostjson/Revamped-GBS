@@ -29,6 +29,11 @@ a:hover {
   src: url("./../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
 }
 
+@font-face{
+  font-family: font-banner;
+  src: url('./../fonts/Palatino_Linotype/palatino-linotype.ttf');
+}
+
 /* set body defaults */
 body {
   background: var(--primary-color);
