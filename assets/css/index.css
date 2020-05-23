@@ -42,7 +42,7 @@ body{
 
 /* Banner Style */
 
-.banner-1 h3{
+/* .banner-1 h3{
     position: absolute;
     font-size: 7em;
     bottom: 180px;
@@ -132,7 +132,7 @@ body{
     left: 46vw;
 }
 
-/* find out more */
+/* find out more 
 .find-out-more{
     background-color: var(--secondary-color);
     height: fit-content;
@@ -152,66 +152,139 @@ body{
 
 .banner-1 .find-out-more{
     top: 80vh;
+} */
+
+.text-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.text-container .head{
+    line-height: 120px;
+}
+
+.text-container .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.generic-text{
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.text-container .body .left{
+    font-size: 2vw;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.text-container .body .left .upper{
+    text-align: right;
+}
+
+.text-container .body .left .lower{
+    text-align: right;
+}
+
+.text-container .body .right{
+    line-height: 70px;
+}
+
+.highlight{
+    font-size: 8vw;
+    font-family: font-banner;
+}
+
+.find-out-more{
+    background-color: var(--secondary-color);
+    width: fit-content;
+    height: fit-content;
+    margin: 40px auto;
+    position: relative;
+    left: 150px;
+}
+
+.find-out-more p{
+    color: white;
+    padding: 2px 5px;
+    margin: 0px;
+}
+
+
+.ban-pag-2 div:first-child{
+    line-height: 0px;
+}
+
+.ban-pag-3 div:nth-child(2){
+    background: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.ban-pag-5 div:nth-child(2){
+    background: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
 @media (max-width: 1000px){
-    .banner-1{
-        padding: 0px !important;
+    .text-container .highlight{
+        font-size: 60px !important;
+    }
+    .text-container .head{
+        line-height: 0px;
+    }
+    .text-container .body .right{
+        line-height: 100px !important;
+    }
+    .text-container .left{
+        font-size: 18px !important;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
-    .banner-1 h3{
-        font-size: 3em;
-        top: 40vh;
-        left: 60px;
+    .generic-text{
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 1000px){
+    .ban-pag-3, .ban-pag-5{
+        padding-top: 150px;
+    }
+    .ban-pag-3 div:first-child, .ban-pag-5  div:first-child{
+        position: relative;
+        right: 100px;
+        line-height: 85px;
     }
 
-    .banner-1 p{
-        font-size: 1em;
-        top: 50vh;
-        padding-right: 10px;
+    .ban-pag-4{
+        padding-top: 50vh;
+        font-family: font-banner !important;
+        padding-right: 10vw;
     }
 
-    .banner-2 h3{
+    .ban-pag-4 div:first-child{
+        position: relative;
+        right: 100px;
+        line-height: 85px;
+    }
+
+    .ban-pag-4 div:nth-child(2){
         font-size: 2.5em;
-        top: 40vh;
-        left: 30px;
     }
 
-    .banner-2 p{
-        font-size: 1.5em;
-        top: 48vh;
-        left: 30px;
-    }
-
-    .levels{
-        font-size: 1em;
-    }
-
-    .levels p:first-child{
-        top: 40vh;
-    }
-
-    .levels p:last-child{
-        top: 52vh;
-    }
-
-    .levels-2{
-        font-size: 0.56em;
-    }
-    .levels-2 p:first-child{
-        left: 25vw;
-    }
-    .levels-2 p:nth-child(2){
-        left: 20vw;
-        top: 50vh;
-    }
-    .levels-2 p:nth-child(3){
-        left: 20vw;
-        top: 53vh;
-    }
-    .levels-2 p:last-child{
-        top: 43vh;
-    }
 }

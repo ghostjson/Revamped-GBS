@@ -1,4 +1,5 @@
 $('#main-banner-carousel').carousel({
+    interval: false
 })
 
 $('.carousel-control-next').click(function(){
@@ -10,5 +11,5 @@ $('.carousel-control-prev').click(function(){
 })
 
 $(document).ready(function(){
-    $('#main-banner-carousel').carousel(0)
+    $('#main-banner-carousel').carousel(4)
 })
