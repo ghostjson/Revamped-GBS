@@ -36,120 +36,6 @@
   background: red;
 }
 
-/* Banner Style */
-
-/* .banner-1 h3{
-    position: absolute;
-    font-size: 7em;
-    bottom: 180px;
-    left: 100px;
-    font-family: font-banner !important;
-}
-
-.banner-1 > p{
-    font-size: 2.5em;
-    font-weight: bold;
-    position: absolute;
-    bottom: 120px;
-    left: 100px;
-}
-
-.banner-2 h3{
-    font-size: 7em;
-    position: absolute;
-    bottom: 250px;
-    left: 200px;
-    font-family: font-banner !important;
-}
-
-.banner-2 > p{
-    font-size: 2.5em;
-    font-weight: bolder;
-    position: absolute;
-    bottom: 180px;
-    left: 500px;
-}
-
-.levels{
-    font-size: 3em;
-    font-weight: bolder;
-}
-
-.levels p{
-    position: absolute;
-    top: 45vh;
-    left: 29vw;
-}
-
-.levels p:first-child{
-    position: absolute;
-    top: 30vh;
-    left: 25vw;
-}
-
-.levels p:last-child{
-    position: absolute;
-    top: 60vh;
-    left: 43vw;
-}
-
-.highlight{
-    font-family: font-banner !important;
-    font-size: 2em;
-}
-
-.levels-2 p:first-child{
-    font-size: 3em;
-    position: absolute;
-    top: 35vh;
-    left: 35vw;
-}
-
-.levels-2 p:nth-child(2){
-    font-size: 2em;
-    position: absolute;
-    top: 52vh;
-    left: 35vw;
-    font-weight: bold;
-}
-
-.levels-2 p:nth-child(3){
-    font-size: 2em;
-    position: absolute;
-    top: 58vh;
-    left: 26.5vw;
-    font-weight: bold;
-}
-
-.levels-2 p:last-child{
-    font-size: 3em;
-    position: absolute;
-    top: 48vh;
-    left: 46vw;
-}
-
-/* find out more 
-.find-out-more{
-    background-color: var(--secondary-color);
-    height: fit-content;
-    width: fit-content;
-    padding: 0px;
-    position: absolute;
-    top: 70vh;
-    left: 60vw;
-    padding: 2px 5px;
-}
-.find-out-more a p{
-    padding: 0px;
-    margin: 0px;
-    font-weight: bold;
-    color: white;
-}
-
-.banner-1 .find-out-more{
-    top: 80vh;
-} */
-
 .text-container {
   width: 100%;
   height: 100vh;
@@ -160,7 +46,7 @@
 }
 
 .text-container .head {
-  line-height: 40px;
+  line-height: 50px;
 }
 
 .text-container .body {
@@ -169,7 +55,7 @@
 }
 
 .generic-text {
-  font-size: 2vw;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -177,6 +63,8 @@
   font-size: 25px;
   font-weight: bold;
   padding-right: 10px;
+  line-height: 25px;
+  padding-top: 15px;
 }
 
 .text-container .body .left .upper {
@@ -197,16 +85,14 @@
 }
 
 .find-out-more {
-  width: fit-content;
-  height: fit-content;
   margin: 40px auto;
-  position: relative;
-  left: 120px;
-  display: flex;
+  position: relavtive;
+  width: 100%;
 }
 
-.find-out-more .icon {
-  padding-right: 5px;
+.find-out-more img {
+  position: absolute;
+  right: 30px;
 }
 
 .find-out-more .icon img {
@@ -221,7 +107,16 @@
 }
 
 .ban-pag-2 div:first-child {
-  line-height: 0px;
+  line-height: 35px;
+}
+
+.ban-pag-2 .highlight{
+  line-height: 50px;
+}
+
+.ban-pag-2 .generic-text .highlight{
+  font-family: font-banner !important;
+  font-weight: normal;
 }
 
 .ban-pag-3 div:nth-child(2) {
@@ -240,6 +135,14 @@
   line-height: 60px;
   text-align: center;
   font-size: 2.5em;
+}
+
+.copyright{
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  font-weight: bolder;
 }
 
 @media (max-width: 750px) {
@@ -316,7 +219,23 @@
     padding: 5px 0px;
     height: 40px !important;
     line-height: 30px !important;
-    font-size: 1.2em !important;
+    font-size: 1em !important;
+  }
+
+  .carousel-item:nth-child(1){
+    background-position-x: 70%;
+  }
+
+  .carousel-item:nth-child(2){
+    background-position-x: 70%;
+  }
+
+  .text-container .body .left{
+    padding: 0px;
+  }
+
+  .copyright{
+    font-size: 0.6em;
   }
 }
 
@@ -346,6 +265,15 @@
 
   .ban-pag-4 div:nth-child(2) {
     font-size: 2.2em;
+  }
+
+  .find-out-more{
+    text-align: center;
+  }
+
+  .find-out-more img{
+    position: relative;
+    left: 150px;
   }
 
 }

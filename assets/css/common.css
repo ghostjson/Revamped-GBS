@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  position: relative;
+}
+
 a,
 a:visited,
 a:active,
@@ -71,8 +75,9 @@ nav {
   margin: 0px;
   top: 30px;
   z-index: 30;
-  left: 0px;
+  left: 17px;
   transition: all 1s ease-in-out;
+  transform: scale(1.2);
 }
 
 nav ul {
@@ -133,7 +138,7 @@ nav .show-btn img {
 
 @media (max-width: 1000px) {
   nav {
-    left: -175px;
+    left: -195px;
   }
   nav .show-btn {
     opacity: 1;
