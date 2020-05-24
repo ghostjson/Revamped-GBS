@@ -11,5 +11,5 @@ $('.carousel-control-prev').click(function(){
 })
 
 $(document).ready(function(){
-    $('#main-banner-carousel').carousel(1)
+    $('#main-banner-carousel').carousel(0)
 })
