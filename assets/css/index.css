@@ -160,7 +160,7 @@
 }
 
 .text-container .head {
-  line-height: 120px;
+  line-height: 40px;
 }
 
 .text-container .body {
@@ -174,7 +174,7 @@
 }
 
 .text-container .body .left {
-  font-size: 2vw;
+  font-size: 25px;
   font-weight: bold;
   padding-right: 10px;
 }
@@ -192,7 +192,7 @@
 }
 
 .highlight {
-  font-size: 8vw;
+  font-size: 80px;
   font-family: font-banner;
 }
 
