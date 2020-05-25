@@ -85,14 +85,13 @@
 } */
 
 .find-out-more {
-  margin: 40px auto;
-  position: absolute;
+  margin: 20px auto;
   width: 100%;
-  bottom: 40px;
 }
 
 .find-out-more img {
   position: absolute;
+  width: 140px;
   right: 30px;
 }
 
@@ -169,9 +168,12 @@
     width: 75vw;
   }
 
+  .ban-pag-2{
+    text-align:center;
+  }
+
   .ban-pag-1{
     position: relative;
-    bottom: 100vh;
   }
 
   .find-out-more {

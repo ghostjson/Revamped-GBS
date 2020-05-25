@@ -75,9 +75,9 @@ nav {
   margin: 0px;
   top: 30px;
   z-index: 30;
-  left: 17px;
+  left: 0px;
   transition: all 1s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 nav ul {
@@ -85,7 +85,13 @@ nav ul {
 }
 
 nav ul li img{
-  width: 175px;
+  width: 100px;
+}
+
+nav ul li:first-child{
+  background: #800000;
+  padding: 10px;
+  text-align: center;
 }
 
 nav ul li:not(:first-child) {
@@ -138,7 +144,7 @@ nav .show-btn img {
 
 @media (max-width: 1000px) {
   nav {
-    left: -195px;
+    left: -175px;
   }
   nav .show-btn {
     opacity: 1;
