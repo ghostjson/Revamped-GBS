@@ -98,9 +98,10 @@ nav ul li:not(:first-child) {
   border-bottom: 1px solid white;
   height: 30px;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   font-family: font-normal;
   font-weight: bolder;
+  padding-left: 20px;
 }
 
 nav ul li a,
