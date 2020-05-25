@@ -77,4 +77,7 @@ form{
   margin: 0 auto;
 }
 
+form label{
+  color: var(--primary-color);
+}
 
