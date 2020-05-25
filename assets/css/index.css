@@ -75,6 +75,7 @@
   position: absolute;
 }
 
+
 @media (max-width: 1000px){
   .carousel-inner .carousel-item:nth-child(4){
     background-position: 90% 50% ;
@@ -98,7 +99,7 @@
 @media (max-width: 750px) {
 
   .carousel-control-prev, .carousel-control-next{
-    bottom: 85px;    
+    bottom: -125px;    
   }
 
   .carousel-inner .carousel-item:nth-child(3){
@@ -123,8 +124,7 @@
   }
 
   .find-out-more {
-    bottom: 30vh;
-    /* left: 50px; */
+    bottom: 38vh;
   }
 
   
@@ -216,6 +216,15 @@
 }
 
 @media (min-width: 1000px) {
+
+  
+.ban-pag-4 picture img{
+  width: 80vw !important;
+  position: relative;
+  bottom: 20vh;
+  left: 5vw;
+}
+
   .ban-pag-3,
   .ban-pag-5 {
     padding-top: 150px;
