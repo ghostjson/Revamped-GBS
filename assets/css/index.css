@@ -23,7 +23,7 @@
 
 .carousel-item .text-container picture img {
   
-  width: 100vw !important;
+  width: 100vw;
   height: auto;
 }
 
@@ -75,8 +75,39 @@
   position: absolute;
 }
 
+@media (max-width: 1000px){
+  .carousel-inner .carousel-item:nth-child(4){
+    background-position: 90% 50% ;
+  }
+
+  .find-out-more{
+    bottom: 35vh;
+    right: 20vw;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .find-out-more{
+    position: absolute;
+    bottom: 100vh;
+    right: 20vw;
+  }
+}
 
 @media (max-width: 750px) {
+
+  .carousel-control-prev, .carousel-control-next{
+    bottom: 85px;    
+  }
+
+  .carousel-inner .carousel-item:nth-child(3){
+    background-position: 65% 50% ;
+  }
+
+  .carousel-inner .carousel-item:nth-child(4){
+    background-position: 80% 50% ;
+  }
   
   .ban-pag-1 > img{
     width: 75vw;
@@ -85,6 +116,7 @@
   .ban-pag-2{
     text-align:center;
   }
+
 
   .ban-pag-1{
     position: relative;
@@ -175,6 +207,11 @@
   
   .find-out-more .icon img {
     width: 25px;
+  }
+
+  
+  .ban-pag-2 picture img{
+    width: 75vw !important;
   }
 }
 
