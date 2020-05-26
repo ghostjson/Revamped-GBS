@@ -97,6 +97,9 @@
 }
 
 @media (max-width: 750px) {
+  .banner-1{
+    background-size: 380% 150% !important;
+  }
 
   .carousel-control-prev, .carousel-control-next{
     bottom: -125px;    
