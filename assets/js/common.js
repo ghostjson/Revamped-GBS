@@ -26,3 +26,7 @@ $('.expand').click(function(){
   }
   $($(this).parent().siblings()[0]).slideToggle('slow')
 })
+
+$('#solution').click(function(){
+  $('.sub-menu').slideToggle()
+})
