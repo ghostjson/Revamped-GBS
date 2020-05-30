@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $(".close-btn").click(function() {
     $("nav").css({ left: "-175px" });
+    $(".sub-menu").slideUp();
     setTimeout(function() {
       $(".show-btn").css({ right: "-30px", opacity: "1" });
     }, 1000);
@@ -21,8 +22,6 @@ $('.expand').click(function(){
     $(this).removeClass('expanded')
   }else{
     $(this).addClass('expanded')
-    // console.log($(this).parent())
-    // $($(this).parent().siblings()[0]).fadeOut()
   }
   $($(this).parent().siblings()[0]).slideToggle('slow')
 })
