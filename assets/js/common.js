@@ -13,3 +13,16 @@ $(document).ready(function() {
     }, 200);
   });
 });
+
+
+// solution page expand
+$('.expand').click(function(){
+  if($(this).hasClass('expanded')){
+    $(this).removeClass('expanded')
+  }else{
+    $(this).addClass('expanded')
+    // console.log($(this).parent())
+    // $($(this).parent().siblings()[0]).fadeOut()
+  }
+  $($(this).parent().siblings()[0]).slideToggle('slow')
+})

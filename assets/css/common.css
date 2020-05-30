@@ -143,6 +143,16 @@ nav .show-btn img {
   width: 20px;
 }
 
+section.contact{
+  margin: 30px 150px;
+}
+
+section.contact input, section.contact select{
+  background: var(--primary-color);
+  border: 1px solid rgb(82, 82, 82);
+}
+
+
 @media (max-width: 1000px) {
   nav {
     left: -175px;
@@ -150,6 +160,10 @@ nav .show-btn img {
   nav .show-btn {
     opacity: 1;
     right: -30px;
+  }
+
+  section.contact{
+    margin: 30px 2vw;
   }
 }
 

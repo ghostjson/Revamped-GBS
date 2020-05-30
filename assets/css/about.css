@@ -24,6 +24,10 @@
   font-size: 1.2em;
 }
 
+.lower-about-banner h3{
+  margin: 30px;
+}
+
 .lower-about-banner p {
   margin: 30px;
 }
