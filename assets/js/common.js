@@ -18,14 +18,21 @@ $(document).ready(function() {
 
 // solution page expand
 $('.expand').click(function(){
-  if($(this).hasClass('expanded')){
-    $(this).removeClass('expanded')
+
+  // console.log($(this))
+
+  if($(this).find('img').hasClass('expanded')){
+    $(this).find('img').removeClass('expanded')
   }else{
-    $(this).addClass('expanded')
+    $(this).find('img').addClass('expanded')
   }
-  $($(this).parent().siblings()[0]).slideToggle('slow')
+  $($(this).siblings()[0]).slideToggle('slow')
 })
 
 $('#solution').click(function(){
   $('.sub-menu').slideToggle()
+})
+
+$('#semi-conductor').click(function(){
+  $('.sc-sub').slideToggle()
 })

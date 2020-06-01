@@ -43,6 +43,11 @@ a:hover {
   src: url('./../fonts/ocr-a/OCR-A\ Regular.ttf');
 }
 
+@font-face{
+  font-family: font-normal-bold;
+  src: url("./../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
+
 /* set body defaults */
 body {
   background: var(--primary-color);
@@ -165,9 +170,11 @@ nav .sub-menu{
 
 nav .sub-menu > li{
   padding-left: 15px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
   transition: all 0.5s;
+}
+
+nav .sub-menu > li:not(:first-child){
+  border-top: 2px solid var(--secondary-color);
 }
 
 nav .sub-menu > li.active{
@@ -176,6 +183,11 @@ nav .sub-menu > li.active{
 
 nav .sub-menu > li:hover{
   background: gray;
+}
+
+nav .sub-menu > li a{
+  font-family: font-normal-bold;
+  color: black !important;
 }
 
 nav .sub-menu > li:hover a{
@@ -189,6 +201,34 @@ nav .sub-menu > li.active a{
 
 nav .sub-menu li a, nav .sub-menu li a:active, nav .sub-menu li a:hover{
   color: rgb(105, 104, 104);
+}
+
+.sc-sub{
+  display: none;
+}
+
+.sc-sub .active{
+  background: gray;
+}
+
+.sc-sub .active a{
+  color: rgb(39, 38, 38);
+
+}
+
+.sc-sub li:hover{
+  background: gray;
+}
+
+.sub{
+  padding-left: 15px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: all 0.5s;
+}
+
+.sub a{
+  font-family: font-normal !important;
 }
 
 section.contact{

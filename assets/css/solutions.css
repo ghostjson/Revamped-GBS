@@ -17,18 +17,24 @@
 
 .expansion .exp-content{
     display: none;
+    padding-bottom: 40px;
 }
 
 .expansion .col-12 h5{
     font-family: font-solution;
+    font-size: 1em;
+    color: #70A0AC;
 }
 
 .expansion .expand{
     cursor: pointer;
+}
+
+.expansion .expand img{
     transition: all 0.8s;
 }
 
-.expansion .expand.expanded{
+.expansion .expand img.expanded{
     filter: invert(29%) sepia(100%) saturate(7426%) hue-rotate(2deg) brightness(107%) contrast(125%);
     transform: rotate(90deg);
 }
