@@ -100,9 +100,31 @@ h6 {
   margin-left: 65px;
 }
 
+.expansion .col-12:first-child .text img {
+  height: 280px;
+  margin-top: 30px;
+}
+
+.expansion .col-12:nth-child(2) .text img {
+  height: 680px;
+  margin-top: 10px;
+}
+
+.expansion .col-12:nth-child(3) .text img {
+  height: 200px;
+}
+
 @media (max-width: 1000px) {
+  .expansion .col-12 {
+    padding: 10px 5vw;
+  }
+
   .common-problems {
     margin-left: 2vw;
+  }
+
+  .expansion .img-p > div > img {
+    width: 90vw;
   }
 
   .expansion .img-p .image img {
@@ -110,7 +132,7 @@ h6 {
   }
 
   .expansion {
-    margin: 30px 5vw;
+    margin: 30px 0;
   }
   .expansion .img-p {
     display: flex;
@@ -121,6 +143,11 @@ h6 {
 
   .expansion .text {
     margin-left: 0;
+  }
+
+  .expansion .text img {
+    width: 90vw;
+    height: auto !important;
   }
 
   .expansion .content {
