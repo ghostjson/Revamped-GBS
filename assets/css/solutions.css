@@ -1,6 +1,6 @@
-.upper-about-banner {
+/* .upper-about-banner {
   background-image: url("./../images/solutions.jpg") !important;
-}
+} */
 
 :root {
   --red-filter: invert(29%) sepia(100%) saturate(7426%) hue-rotate(2deg)
@@ -10,6 +10,7 @@
 .expansion .col-12 {
   margin-top: 30px;
   padding: 30px 180px;
+  font-size: 1.5em;
 }
 
 .bg-expand {
