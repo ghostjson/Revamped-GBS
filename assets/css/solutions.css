@@ -31,14 +31,22 @@
 
 .expansion .expand {
   cursor: pointer;
+  color: #527f92 !important;
+  transition: all 0.8s;
+}
+
+.expansion .expand.expands {
+  color: white !important;
 }
 
 .expansion .expand img {
   transition: all 0.8s;
+  filter: invert(47%) sepia(17%) saturate(884%) hue-rotate(153deg)
+    brightness(95%) contrast(88%);
 }
 
 .expansion .expand img.expanded {
-  /* filter: invert(29%) sepia(100%) saturate(7426%) hue-rotate(2deg) brightness(107%) contrast(125%); */
+  filter: none;
   transform: rotate(90deg);
 }
 

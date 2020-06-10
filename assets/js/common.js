@@ -27,6 +27,7 @@ $(".expand").click(function() {
     $(this)
       .find("img")
       .removeClass("expanded");
+    $(this).removeClass("expands");
     setTimeout(() => {
       $(this)
         .parent()
@@ -36,6 +37,7 @@ $(".expand").click(function() {
     $(this)
       .parent()
       .addClass("bg-expand");
+    $(this).addClass("expands");
     $(this)
       .find("img")
       .addClass("expanded");
