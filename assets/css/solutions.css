@@ -55,6 +55,11 @@
   margin-top: 20px;
 }
 
+.data-min {
+  width: 100%;
+  height: auto !important;
+}
+
 .expansion .img-p {
   margin-top: 20px;
   margin-left: 40px;
@@ -120,6 +125,13 @@ h6 {
 
 .expansion .col-12:nth-child(3) .text img {
   height: 200px;
+}
+
+.data-min-img-p img {
+  float: left;
+  width: 300px;
+  margin: 10px;
+  margin-left: 40px;
 }
 
 @media (max-width: 1000px) {
