@@ -203,7 +203,7 @@ nav .sub-menu li a, nav .sub-menu li a:active, nav .sub-menu li a:hover{
   color: rgb(105, 104, 104);
 }
 
-.sc-sub{
+.sc-sub, .ts-sub{
   display: none;
 }
 

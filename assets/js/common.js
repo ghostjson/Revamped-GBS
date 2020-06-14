@@ -52,3 +52,7 @@ $("#solution").click(function() {
 $("#semi-conductor").click(function() {
   $(".sc-sub").slideToggle();
 });
+
+$("#transport").click(function() {
+  $(".ts-sub").slideToggle();
+});
