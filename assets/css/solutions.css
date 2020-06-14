@@ -200,6 +200,11 @@ h6 {
 }
 
 @media (max-width: 600px) {
+
+  .expansion .col-12:first-child .text img{
+    margin-left: 0px;
+  }
+
   .container {
     padding: 0px;
   }
