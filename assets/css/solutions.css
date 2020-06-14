@@ -1,6 +1,7 @@
-/* .upper-about-banner {
-  background-image: url("./../images/solutions.jpg") !important;
-} */
+.upper-about-banner {
+  background-repeat: no-repeat !important;
+  background-size: cover !important; 
+}
 
 :root {
   --red-filter: invert(29%) sepia(100%) saturate(7426%) hue-rotate(2deg)
