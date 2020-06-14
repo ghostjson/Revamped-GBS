@@ -1,254 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GBS</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GBS</title>
 
 
-    <!-- Jqeury -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <!-- Jqeury -->
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
 
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-    <!-- Common Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/common.css" />
+  <!-- Common Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/common.css" />
 
-    <!-- About Page Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/about.css" />
+  <!-- About Page Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/about.css" />
 
-    <!-- About Page Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/solutions.css" />
-  </head>
-  <body>
+  <!-- About Page Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/solutions.css" />
+</head>
 
-    <nav class="menu">
-      <div class="close-btn">
-        <img src="./assets/icons/times-solid.svg" alt="hide">
+<body>
+
+  <nav class="menu">
+    <div class="close-btn">
+      <img src="./assets/icons/times-solid.svg" alt="hide">
+    </div>
+    <div class="show-btn">
+      <img src="./assets/icons/bars-solid.svg" alt="show">
+    </div>
+    <ul>
+      <li>
+        <a href="/"><img src="./assets/images/logo.png" alt="logo"></a>
+      </li>
+      <li>
+        <a href="/about.html">ABOUT US</a>
+      </li>
+      <li>
+        <a href="#" id="solution">SOLUTIONS</a>
+        <ul class="sub-menu">
+          <li class="">
+            <a id="semi-conductor" href="#">SEMI-CONDUCTOR</a>
+          </li>
+          <div class="sc-sub">
+            <li class="sub">
+              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+            </li>
+            <li class="sub">
+              <a href="sc-heater.html">HEATER PEDESTALS</a>
+            </li>
+            <li class="sub">
+              <a href="sc-optics.html">OPTICS & COATINGS</a>
+            </li>
+            <li class="sub">
+              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+            </li>
+            <li class="sub">
+              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+            </li>
+          </div>
+
+          <li class=" active">
+            <a id="transport" href="#">TRANSPORT</a>
+          </li>
+          <div class="ts-sub">
+            <li class="sub">
+              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+            </li>
+            <li class="sub">
+              <a href="ts-log.html">LOGISTICS</a>
+            </li>
+            <li class="sub ">
+              <a href="ts-mil.html">MILITARY</a>
+            </li>
+            <li class="sub active">
+              <a href="ts-ves.html">VEHICLE ENHANCEMENT SOLUTIONS</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#">OUR PORTFOLIO</a>
+      </li>
+      <li>
+        <a href="#">NEWS & UPDATES</a>
+      </li>
+      <li>
+        <a href="/contact.html">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="about-banner">
+    <div class="container-fluid">
+      <div class="row upper-about-banner" style="background-image: url('./assets/images/ts-ves-banner.jpg')">
+        <div class="col heading">
+          <h2>SOLUTIONS</h2>
+        </div>
       </div>
-      <div class="show-btn">
-        <img src="./assets/icons/bars-solid.svg" alt="show">
-      </div>
-      <ul>
-        <li>
-            <a href="/"><img src="./assets/images/logo.png" alt="logo"></a>
-        </li>
-        <li>
-         <a href="/about.html">ABOUT US</a>
-        </li>
-        <li>
-            <a href="#" id="solution">SOLUTIONS</a>
-            <ul class="sub-menu">
-              <li class="">
-               <a id="semi-conductor" href="#">SEMI-CONDUCTOR</a> 
-              </li>
-              <div class="sc-sub">
-                <li class="sub">
-                  <a href="sc-sealing.html">SEALING SOLUTIONS</a>
-                </li>
-                <li class="sub">
-                  <a href="sc-heater.html">HEATER PEDESTALS</a>
-                </li>
-                <li class="sub">
-                    <a href="sc-optics.html">OPTICS & COATINGS</a>
-                </li>
-                <li class="sub">
-                    <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
-                </li>
-                <li class="sub">
-                    <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
-                </li>
-              </div>
-              
-              <li class=" active">
-                <a id="transport" href="#">TRANSPORT</a> 
-              </li>
-              <div class="ts-sub">
-                <li class="sub">
-                  <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
-                </li>
-                <li class="sub">
-                  <a href="ts-log.html">LOGISTICS</a>
-                </li>
-                <li class="sub ">
-                  <a href="ts-mil.html">MILITARY</a>
-                </li>
-                <li class="sub active">
-                  <a href="ts-ves.html">VEHICLE ENHANCEMENT SOLUTIONS</a>
-                </li>
-              </div>
-            </ul>
-        </li>
-        <li>
-            <a href="#">OUR PORTFOLIO</a>
-        </li>
-        <li>
-            <a href="#">NEWS & UPDATES</a>
-        </li>
-        <li>
-            <a href="/contact.html">CONTACT US</a>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="about-banner">
-      <div class="container-fluid">
-        <div class="row upper-about-banner" style="background-image: url('./assets/images/ts-mil-banner.jpg')">
-          <div class="col heading">
-            <h2>SOLUTIONS</h2>
+      <div class="row lower-about-banner">
+        <div class="col">
+          <div class="container">
+            <h3>Transport – Vehicle Enhancement Solutions</h3>
+            <p>
+              Automotive Vision (AMV) series is the specialised smart solution developed
+              by GBS for any special vehicles with 3 key aims:
+            </p>
+            <p class="border-top">
+              1. &nbsp; Driver Centric <br>
+              Intuitive driver user interface
+            </p>
+            <p>
+              2. &nbsp; Increased Safety <br>
+              Alert drivers on potential dangers and collision with an advanced warning system
+            </p>
+            <p class="border-bottom">
+              3. &nbsp; Reduced Cost of Ownership <br>
+              Reduced collisions save on business expenses such as repairs,
+              insurance premiums and other indirect costs
+            </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="expansion">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV 2 </h4>
+            <div class="exp-content">
+              <div class="text">
+                <p>
+                    Both front and rear cameras are installed into the specialty vehicle 
+                    and connected to the monitor near the driver’s seat. 
+                </p>
+                <p>
+                    The front camera is activated at ignition to observe for 
+                    potential collisions and pedestrians. When reversing, the rear 
+                    camera is activated to watch for any obstacles.  
+                </p>
+                <h6 class="mt-5">Product Features</h6>
+                <ul>
+                  <li>Forward collision warning</li>
+                  <li>Lane departure warning</li>
+                  <li>Pedestrian collision warning</li>
+                </ul>
+                <h6 class="mt-5">Compatible Vehicles</h6>
+                <ul>
+                  <li>Bus</li>
+                  <li>Rigid Lorry</li>
+                  <li>Road sweeper</li>
+                  <li>Ambulances</li>
+                  <li>Garbage Truck</li>
+                  <li>Low loader</li>
+                  <li>Prime Mover</li>
+                  <li>Courier</li>
+                  <li>Reach stacker</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV 4 </h4>
+              <div class="exp-content">
+                <div class="text">
+                  <p>
+                      Due to its size and length, rear mirrors are insufficient to cover all the blind
+                       spots for specialty vehicles. Our 4-camera solution provides an 
+                       omni-directional coverage for the vehicle’s blind spots. AMV 4 can
+                        watch for pedestrians and cyclists on all sides and alert drivers 
+                        at any time; reducing likelihood of accidents especially when navigating 
+                        through crowded areas and narrow spaces. 
+                  </p>
+                  <h6 class="mt-5">Product Features</h6>
+                  <ul>
+                    <li>Forward collision warning</li>
+                    <li>Lane departure warning</li>
+                    <li>Pedestrian collision warning</li>
+                    <li>Blind spot detection</li>
+                  </ul>
+                  <h6 class="mt-5">Compatible Vehicles</h6>
+                  <ul>
+                    <li>Bus</li>
+                    <li>Semitrailer truck</li>
+                    <li>Petrol tanker</li>
+                    <li>Fire trucks</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="col-12">
+            <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV 360 </h4>
+              <div class="exp-content">
+                <div class="text">
+                  <p>
+                      The AMV 360 offers a complete coverage for all the vehicle’s blind spots. 
+                      Four specialized cameras are installed onto each side of the vehicle. 
+                      Our processors will seamlessly stitch the images together to render a 
+                      real-time, 3D top down view of the vehicle’s surroundings.  
+                  </p>
+                  <p>
+                      When supplemented with radars, AMV 360 accurately identifies humans 
+                      and objects within a designated range and alerts the driver of potential 
+                      collisions in the vicinity. 
+                  </p>
+                  <h6 class="mt-5">Product Features</h6>
+                  <ul>
+                    <li>Blind spot detection</li>
+                    <li>Easy Manoeuvring</li>
+                  </ul>
+                  <h6 class="mt-5">Compatible Vehicles</h6>
+                  <ul>
+                    <li>Petrol tanker</li>
+                    <li>Semitrailer truck</li>
+                    <li>Heavy haulage system</li>
+                    <li>Fire trucks</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="col-12">
+            <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV (R) </h4>
+              <div class="exp-content">
+                <div class="text">
+                  <p>
+                      Designed in accordance to military standards, the AMV (R) is a ruggedized smart 
+                      module that can be retrofitted with any military vehicle’s existing vision 
+                      systems.   
+                  </p>
+                  <p>
+                      With AMV (R), TI and rear cameras now double as strategic surveillance 
+                      sensors to alert for potential collisions and detect possible threats in 
+                      hostile environments. Thus, saving lives and reducing costs.  
+                  </p>
+                  <h6 class="mt-5">Product Features</h6>
+                  <ul>
+                    <li>Retrofit into Vision systems </li>
+                    <li>Long distance recognition</li>
+                    <li>Heavy duty</li>
+                    <li>High Electromagnetic compatibility</li>
+                    <li>Special protection layering</li>
+                  </ul>
+                  <h6 class="mt-5">Compatible Vehicles</h6>
+                  <ul>
+                    <li>Military light utility vehicle</li>
+                    <li>Armoured fighting vehicle</li>
+                    <li>Reconnaissance vehicle</li>
+                    <li>Military engineering vehicle</li>
+                    <li>Military ambulances</li>
+                    <li>Electronic warfare vehicles</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-banner mt-5">
+      <div class="container-fluid">
         <div class="row lower-about-banner">
           <div class="col">
             <div class="container">
-                <h3>Semiconductor - Sealing Solutions</h3>
-                <p>  
-                  Our vision solutions are designed to support military personnel
-                   with effectiveness and efficiency under such harsh environments 
-                   (e.g. deserts, sandstorms, extreme winters and jungles). 
-              </p>
-              <p>
-                Compliant to industrial military standards, our vision
-                 solutions are the perfect auxiliary support for drivers of any 
-                 logistical and tactical. Commanders, drivers and crew can recognize
-                  surroundings threats and take action. Thus, saving lives and reducing damages. 
-
-              </p>
-              <p class="border-top">
-                  1. &nbsp Robust & Sturdy <br>
-                  Able to withstand harsh environments. Shock and vibration resistant.
-                   Maintains camera functionalities in permafrost conditions (-60 °C).
-                    [MIL-STD-810G]
-              </p>
-              <p>
-                2. &nbsp Heavy-duty 
-                Perform under high intensity and long hours of usage, designed validated
-                 by 10,000 Km in variety of terrains. [MIL-STD-810G] 
-              </p>
-              <p class="border-bottom">
-                3. &nbsp High Electromagnetic Compatibility <br>
-                Clarity in the signal and images transmitted from our
-                 cameras (from 0.01MHz to 100 MHz). [MIL-STD-461E]
-              </p>
-              <p>
-                Our vision solutions are suitable for a variety of military 
-                vehicles. Here are some examples:
-              </p>
+                <h4>Optional Add-On: Driver Status Monitoring</h4>
+                <p>
+                  The Driver Status Monitoring (DSM) feature is an optional add-on
+                  feature that complements the AMV system.
+                </p>
+                <p>
+                  DSM is activated when the driver starts the vehicle. During the
+                  journey, the in-vehicle camera monitors the driver’s facial
+                  expressions and actions. DSM alerts the driver for any risky
+                  actions made; allowing him to be more conscious of his actions.
+                </p>
+                <p>
+                  Our DSM can be easily retrofitted into any current fleet management
+                  system. We provide integration as an add-on service for the DSM.
+                  Real-time information recorded is simultaneously sent to the fleet manager who can take real-time action
+                  to enforce safety.
+                </p>
+                <img class="ml-md-4" src="./assets/images/solutions/ts-danger-driving.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-   
-    <section class="expansion">
-        <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <h5 class="expand" > <img src="./assets/images/triangle.png" width="30px"> Semi-Trailer Truck </h4>
-                <div class="exp-content">
-                  <div class="text">
-                    <p>
-                      Positioned and angled to record the immediate areas, our ruggedized cameras provide virtually 
-                      all-round visibility. Drivers and commanders can access any camera 
-                      independently of one another to view the live images.
-                    </p>
-                    <img class="ts-bus" src="./assets/images/solutions/ts-light-utility-vehicle.png" alt="">
-                    <img class="ts-camera mb-md-3" src="./assets/images/solutions/ts-camera.png" alt="">
-                    <h6 class="mt-3">Key Benefits</h6>
-                    <ul>
-                        <li>Added protection for military personnel</li>
-                        <li>Military standard components</li>
-                        <li>Ruggedized cameras for harsh environments</li>
-                        <li>Detect human up to 15m in foggy or dark conditions</li>
-                    </ul>
-                </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <h5 class="expand" > <img src="./assets/images/triangle.png" width="30px"> Armoured Fighting Vehicle </h4>
-                <div class="exp-content">
-                  <div class="text">
-                    <p>
-                      Our cameras are strategically placed with one mounted on the rear and a second 
-                      one pointing at the container. With a field viewing angle of 60 degrees, 
-                      drivers receive clear images of the surroundings. Hence, supporting drivers
-                       to safely manoeuvre in challenging situations.  
-                    </p>
-                    <img class="ts-bus ml-md-4" src="./assets/images/solutions/ts-armoured-fighting.png" alt="">
-                    <img class="ts-camera mt-3 mb-md-3 ml-md-4" src="./assets/images/solutions/ts-camera.png" alt="">
-                    <h6 class="mt-3">Key Benefits</h6>
-                    <ul>
-                        <li>Compliance with strict military standards </li>
-                        <li>Reinforced vision system components</li>
-                        <li>Increased safety and situational awareness</li>
-                        <li>Strain relief for driver</li>
-                    </ul>
-                </div>
-                </div>
-              </div>
+
+  <section class="common-problems">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h3>Connect With Us</h3>
+
+          <p>Let's see how we can serve you with our solutions and expertise</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
             </div>
-        </div>
-    </section>
-
-    <section class="common-problems">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h3>Connect With Us</h3>
-
-            <p>Let's see how we can serve you with our solutions and expertise</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <form>
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="contact">Contact Number</label>
-                    <input type="text" class="form-control" id="contact" aria-describedby="contact" placeholder="Enter Your Contact Number">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="company">Company</label>
-                    <input type="text" class="form-control" id="company" aria-describedby="company" placeholder="Enter Your Company">
-                  </div>
-                  <div class="form-group">
-                    <label for="service">Topic/Service of Interest</label>
-                    <select class="form-control" id="service">
-                      <option>Semiconductor Solutions</option>
-                      <option>Transport Solutions</option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
+            <div class="form-group">
+              <label for="contact">Contact Number</label>
+              <input type="text" class="form-control" id="contact" aria-describedby="contact"
+                placeholder="Enter Your Contact Number">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" class="form-control" id="company" aria-describedby="company"
+                placeholder="Enter Your Company">
+            </div>
+            <div class="form-group">
+              <label for="service">Topic/Service of Interest</label>
+              <select class="form-control" id="service">
+                <option>Semiconductor Solutions</option>
+                <option>Transport Solutions</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    
 
 
-    <!-- JS libraries -->
-    <!-- Jquery -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    
-    <!-- Common js -->
-    <script src="./assets/js/common.js"></script>
-  </body>
+
+  <!-- JS libraries -->
+  <!-- Jquery -->
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+
+  <!-- Common js -->
+  <script src="./assets/js/common.js"></script>
+</body>
+
 </html>

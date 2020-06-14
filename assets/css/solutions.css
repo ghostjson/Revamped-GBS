@@ -159,6 +159,14 @@ h6 {
   padding-bottom: 25px;
 }
 
+.expansion h6{
+  margin-left: 25px;
+} 
+.expansion ul{
+  margin-left: 50px;
+  font-size: 0.8em;
+}
+
 @media (max-width: 1000px) {
   .expansion .col-12 {
     padding: 10px 5vw;
