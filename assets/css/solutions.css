@@ -51,7 +51,7 @@
 }
 
 .expansion .text {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 20px;
 }
 
@@ -106,7 +106,7 @@ h6 {
 }
 
 .exp-content p {
-  margin-left: 40px;
+  margin-left: 23px;
 }
 
 .exp-content ul {
@@ -116,6 +116,7 @@ h6 {
 .expansion .col-12:first-child .text img {
   height: 280px;
   margin-top: 30px;
+  margin-left: 23px;
 }
 
 .expansion .col-12:nth-child(2) .text img {
@@ -136,6 +137,16 @@ h6 {
 
 .expansion p {
   font-size: 0.85em;
+}
+
+.ts-bus{
+  width: 100%;
+  height: auto !important;
+}
+
+.ts-camera{
+  width: 80%;
+  height: auto !important;
 }
 
 @media (max-width: 1000px) {

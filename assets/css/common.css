@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   position: relative;
 }
 
@@ -33,17 +33,17 @@ a:hover {
   src: url("./../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
 }
 
-@font-face{
+@font-face {
   font-family: font-banner;
-  src: url('./../fonts/Palatino_Linotype/palatino-linotype.ttf');
+  src: url("./../fonts/Palatino_Linotype/palatino-linotype.ttf");
 }
 
-@font-face{
+@font-face {
   font-family: font-solution;
-  src: url('./../fonts/ocr-a/OCR-A\ Regular.ttf');
+  src: url("./../fonts/ocr-a/OCR-A\ Regular.ttf");
 }
 
-@font-face{
+@font-face {
   font-family: font-normal-bold;
   src: url("./../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
 }
@@ -88,21 +88,22 @@ nav {
   left: 0px;
   transition: all 1s ease-in-out;
   transform: scale(1);
+  font-size: 0.8em;
 }
 
 nav > ul {
   margin-bottom: 0px;
 }
 
-nav > ul > li{
+nav > ul > li {
   position: relative;
 }
 
-nav > ul > li > img{
+nav > ul > li > img {
   width: 100px;
 }
 
-nav > ul > li:first-child{
+nav > ul > li:first-child {
   background: #800000;
   padding: 10px;
   text-align: center;
@@ -158,7 +159,7 @@ nav .show-btn img {
   width: 20px;
 }
 
-nav .sub-menu{
+nav .sub-menu {
   position: absolute;
   background: rgb(238, 236, 236);
   left: 175px;
@@ -168,77 +169,80 @@ nav .sub-menu{
   display: none;
 }
 
-nav .sub-menu > li{
+nav .sub-menu > li {
   padding-left: 15px;
   transition: all 0.5s;
 }
 
-nav .sub-menu > li:not(:first-child){
+nav .sub-menu > li:not(:first-child) {
   border-top: 2px solid var(--secondary-color);
 }
 
-nav .sub-menu > li.active{
+nav .sub-menu > li.active {
   background: var(--secondary-color);
 }
 
-nav .sub-menu > li:hover{
+nav .sub-menu > li:hover {
   background: gray;
 }
 
-nav .sub-menu > li a{
+nav .sub-menu > li a {
   font-family: font-normal-bold;
   color: black !important;
 }
 
-nav .sub-menu > li:hover a{
+nav .sub-menu > li:hover a {
   color: rgb(51, 51, 51);
 }
 
-nav .sub-menu > li.active a{
+nav .sub-menu > li.active a {
   color: black;
   font-weight: bold;
 }
 
-nav .sub-menu li a, nav .sub-menu li a:active, nav .sub-menu li a:hover{
+nav .sub-menu li a,
+nav .sub-menu li a:active,
+nav .sub-menu li a:hover {
   color: rgb(105, 104, 104);
 }
 
-.sc-sub, .ts-sub{
+.sc-sub,
+.ts-sub {
   display: none;
 }
 
-.sc-sub .active{
+.sc-sub .active,
+.ts-sub .active {
   background: gray;
 }
 
-.sc-sub .active a{
+.sc-sub .active a {
   color: rgb(39, 38, 38);
-
 }
 
-.sc-sub li:hover{
+.sc-sub li:hover {
   background: gray;
 }
 
-.sub{
+.sub {
   padding-left: 15px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   transition: all 0.5s;
 }
 
-.sub a{
+.sub a {
   font-family: font-normal !important;
 }
 
-section.contact{
+section.contact {
   margin: 30px 150px;
 }
 
-section.contact input, section.contact select{
+section.contact input,
+section.contact select {
   border: 1px solid rgb(82, 82, 82);
 }
-
 
 @media (max-width: 1000px) {
   nav {
@@ -249,8 +253,7 @@ section.contact input, section.contact select{
     right: -30px;
   }
 
-  section.contact{
+  section.contact {
     margin: 30px 2vw;
   }
 }
-
