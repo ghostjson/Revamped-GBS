@@ -149,6 +149,16 @@ h6 {
   height: auto !important;
 }
 
+.border-top{
+  border-top: 2px solid #527f92 !important;
+  padding-top: 25px;
+}
+
+.border-bottom{
+  border-bottom: 2px solid #527f92 !important;
+  padding-bottom: 25px;
+}
+
 @media (max-width: 1000px) {
   .expansion .col-12 {
     padding: 10px 5vw;
