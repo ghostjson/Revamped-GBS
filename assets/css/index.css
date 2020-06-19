@@ -216,6 +216,10 @@
   .ban-pag-2 picture img{
     width: 75vw !important;
   }
+
+  .ban-pag-4{
+    background: rgba(0, 0, 0, 0.301);
+  }
 }
 
 @media (min-width: 1000px) {
