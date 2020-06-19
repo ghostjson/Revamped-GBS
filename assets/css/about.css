@@ -113,7 +113,10 @@
 /* Credentials */
 .credentials .image {
   height: 320px;
-  background: #4c595f;
+}
+
+.credentials .image img{
+  height: inherit;
 }
 
 .credentials p {
