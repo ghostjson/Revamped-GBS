@@ -164,7 +164,7 @@ nav .show-btn img {
   width: 20px;
 }
 
-nav .sub-menu {
+nav .sub-menu, nav .sub-news {
   position: absolute;
   background: rgb(238, 236, 236);
   left: 175px;
@@ -174,33 +174,33 @@ nav .sub-menu {
   display: none;
 }
 
-nav .sub-menu > li {
+nav .sub-menu > li, nav .sub-news > li {
   padding-left: 15px;
   transition: all 0.5s;
 }
 
-nav .sub-menu > li:not(:first-child) {
+nav .sub-menu > li:not(:first-child),  nav .sub-news > li:not(:first-child){
   border-top: 2px solid var(--secondary-color);
 }
 
-nav .sub-menu > li.active {
+nav .sub-menu > li.active, nav .sub-news > li.active {
   background: var(--secondary-color);
 }
 
-nav .sub-menu > li:hover {
+nav .sub-menu > li:hover , nav .sub-news > li:hover {
   background: gray;
 }
 
-nav .sub-menu > li a {
+nav .sub-menu > li a, nav .sub-news > li a  {
   font-family: font-normal-bold;
   color: black !important;
 }
 
-nav .sub-menu > li:hover a {
+nav .sub-menu > li:hover a, nav .sub-news > li:hover a  {
   color: rgb(51, 51, 51);
 }
 
-nav .sub-menu > li.active a {
+nav .sub-menu > li.active a, nav .sub-news > li.active a {
   color: black;
   font-weight: bold;
 }

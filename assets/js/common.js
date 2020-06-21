@@ -46,7 +46,9 @@ $(".expand").click(function() {
 });
 
 $("#solution").click(function() {
+  $('.sub-news').slideUp();
   $(".sub-menu").slideToggle();
+
 });
 
 $("#semi-conductor").click(function() {
@@ -56,3 +58,8 @@ $("#semi-conductor").click(function() {
 $("#transport").click(function() {
   $(".ts-sub").slideToggle();
 });
+
+$("#news").click(function () {
+  $(".sub-menu").slideToggle();
+  $(".sub-news").slideToggle();
+})
