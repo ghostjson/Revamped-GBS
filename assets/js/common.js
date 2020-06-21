@@ -60,6 +60,6 @@ $("#transport").click(function() {
 });
 
 $("#news").click(function () {
-  $(".sub-menu").slideToggle();
+  $(".sub-menu").slideUp();
   $(".sub-news").slideToggle();
 })
