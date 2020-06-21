@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GBS</title>
 
-
     <!-- Jqeury -->
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
 
@@ -18,267 +17,256 @@
 
     <!-- About Page Stylesheet -->
     <link rel="stylesheet" href="./assets/css/about.css" />
+
+    <style>
+      body {
+        background-color: white;
+      }
+      .sub-heading-port {
+        color: #527f92;
+        font-weight: 600;
+        text-align: left;
+      }
+
+      .about-banner {
+        background: white;
+      }
+
+      .portfolio-img {
+        border-bottom: 2px solid #527f92;
+      }
+
+      .portfolio {
+        background-color: #527f92;
+        padding: 50px 0px;
+      }
+
+      .image-text {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .image-text p {
+        max-width: 800px;
+        margin-left: 20px;
+      }
+
+      @media (max-width: 1000px) {
+        .image-text img {
+          margin: 0 auto;
+        }
+      }
+    </style>
   </head>
   <body>
-
     <nav class="menu">
-        <div class="close-btn">
-          <img src="./assets/icons/times-solid.svg" alt="hide">
-        </div>
-        <div class="show-btn">
-          <img src="./assets/icons/bars-solid.svg" alt="show">
-        </div>
-        <ul>
-          <li>
-              <a href="/"><img src="./assets/images/logo.png" alt="logo"></a>
-          </li>
-          <li>
-           <a href="/about.html">ABOUT US</a>
-          </li>
-          <li>
-              <a href="#" id="solution">SOLUTIONS</a>
-              <ul class="sub-menu">
-                <li class="">
-                 <a id="semi-conductor" href="#">SEMI-CONDUCTOR</a> 
-                </li>
-                <div class="sc-sub">
-                  <li class="sub">
-                    <a href="sc-sealing.html">SEALING SOLUTIONS</a>
-                  </li>
-                  <li class="sub">
-                    <a href="sc-heater.html">HEATER PEDESTALS</a>
-                  </li>
-                  <li class="sub">
-                      <a href="sc-optics.html">OPTICS & COATINGS</a>
-                  </li>
-                  <li class="sub">
-                      <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
-                  </li>
-                  <li class="sub">
-                      <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
-                  </li>
-                </div>
-                <li class="">
-                  <a id="transport" href="#">TRANSPORT</a> 
-                </li>
-                <div class="ts-sub">
-                  <li class="sub">
-                    <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
-                  </li>
-                  <li class="sub">
-                    <a href="ts-log.html">LOGISTICS</a>
-                  </li>
-                  <li class="sub">
-                    <a href="ts-mil.html">MILITARY</a>
-                  </li>
-                  <li class="sub">
-                    <a href="ts-ves.html">VEHICLE ENHANCEMENT SOLUTIONS</a>
-                  </li>
-                </div>
-              </ul>
-          </li>
-          <li>
-              <a class="active" href="portfolio.html">OUR PORTFOLIO</a>
-          </li>
-          <li>
-              <a href="news.html">NEWS & UPDATES</a>
-          </li>
-          <li>
-              <a href="/contact.html">CONTACT US</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="close-btn">
+        <img src="./assets/icons/times-solid.svg" alt="hide" />
+      </div>
+      <div class="show-btn">
+        <img src="./assets/icons/bars-solid.svg" alt="show" />
+      </div>
+      <ul>
+        <li>
+          <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        </li>
+        <li>
+          <a href="/about.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#" id="solution">SOLUTIONS</a>
+          <ul class="sub-menu">
+            <li class="">
+              <a id="semi-conductor" href="#">SEMI-CONDUCTOR</a>
+            </li>
+            <div class="sc-sub">
+              <li class="sub">
+                <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              </li>
+              <li class="sub">
+                <a href="sc-heater.html">HEATER PEDESTALS</a>
+              </li>
+              <li class="sub">
+                <a href="sc-optics.html">OPTICS & COATINGS</a>
+              </li>
+              <li class="sub">
+                <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              </li>
+              <li class="sub">
+                <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              </li>
+            </div>
+            <li class="">
+              <a id="transport" href="#">TRANSPORT</a>
+            </li>
+            <div class="ts-sub">
+              <li class="sub">
+                <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              </li>
+              <li class="sub">
+                <a href="ts-log.html">LOGISTICS</a>
+              </li>
+              <li class="sub">
+                <a href="ts-mil.html">MILITARY</a>
+              </li>
+              <li class="sub">
+                <a href="ts-ves.html">VEHICLE ENHANCEMENT SOLUTIONS</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a class="active" href="portfolio.html">OUR PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="news.html">NEWS & UPDATES</a>
+        </li>
+        <li>
+          <a href="/contact.html">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
 
-    <section class="full-height about-banner">
+    <section class="about-banner" >
       <div class="container-fluid">
-        <div class="row upper-about-banner">
+        <div class="row upper-about-banner"  style="background-image: url('./assets/images/portfolio-banner.jpg');background-position: center;">
           <div class="col heading">
             <h2>OUR PORTFOLIO</h2>
           </div>
         </div>
         <div class="row lower-about-banner">
-          <div class="col">
-            <div class="container">
+          <div class="col" style="text-align: center;">
+            <div class="container" style="border-bottom: 1px solid #527f92;">
+              <p class="sub-heading-port">
+                Our Partners & Clientele:
+              </p>
 
-              <p>
-                Our Partners 
-              </p>
-              <p>
-                Over the years, we have grown to become a major supplier for
-                Semiconductor, Defence industries and its adjacent markets. We
-                value-add to our customers by developing a range of customised
-                solutions and applications to meet their needs.
-              </p>
-              <p>
-                With our extensive network of business partners, we can
-                complement our expertise with their competencies and deliver the
-                best solutions to our customers.
-              </p>
+              <img
+                style="width: 100%;"
+                class="portfolio-img"
+                src="./assets/images/portfolio.jpg"
+                alt=""
+              />
+
+              <p class="sub-heading-port">Our Awards & Certifications:</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="full-height vision">
+    <section class="portfolio container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col box-vision">
-            <div class="thumbnail">
-              <img src="./assets/images/visison.jpg" alt="vision" />
-            </div>
-            <div class="heading-vision">
-              <h2>Our Vision</h2>
-            </div>
-            <div class="content-vision">
-              <img src="./assets/images/triangle.png" alt="icon" />
-              <p>
-                To be the leading end-to-end solution provider in the
-                semiconductor and specialty transport industry.
-              </p>
-            </div>
-          </div>
-          <div class="col box-vision">
-            <div class="thumbnail">
-              <img src="./assets/images/vision2.jpg" alt="vision2" />
-            </div>
-            <div class="heading-vision">
-              <h2>Our Mission</h2>
-            </div>
-            <div class="content-vision">
-              <img src="./assets/images/triangle.png" alt="icon" />
-              <p>
-                To create sustainability by leveraging on our network and
-                partners’ core competencies to develop the expertise to support
-                our customer’s product and services.
-              </p>
+          <div class="col">
+            <h3>2015 Quality Award (ST Kinetics)</h3>
+            <div class="row mt-4">
+              <div class="col image-text">
+                <img src="./assets/images/cre-1.jpg" alt="" />
+                <p class="mt-4" style="font-size: 1.3em;">
+                  GBS was awarded the 2015 Quality Award from Singapore
+                  Technologies Kinetics during the Supplier Forum held on the 3
+                  September 2015. This is in recognition of the GBS’s commitment
+                  towards Quality and we would like to thank ST Kinetics for
+                  their guidance in helping us to enhance our work processes. ST
+                  Kinetics is a land systems and specialty vehicles arm of
+                  Singapore Technologies during this year’s Supplier Forum
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="approach">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col heading-approach">
-            <h1>OUR APPROACH</h1>
-          </div>
-        </div>
+    <section class="portfolio container-fluid mt-2">
+      <div class="container">
         <div class="row">
           <div class="col">
-            <img src="./assets/images/our_approch.jpg" alt="approach" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <h3>Established Design & Development Process</h3>
-              <p>
-                From discovery and rapid prototyping to design verification and
-                validation. We aim to substantially reduce time-to-market
-                cycles.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="box">
-              <h3>Close Collaboration with All Our Customers & Partners</h3>
-              <p>
-                From problem identification to the deployment of the solutions,
-                we gain an in-depth insight to our customers' needs and
-                pain-points. It enables us to accurately scope and define the
-                specifications for their needed solutions.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <h3>On-site Technical Support & Commissioning</h3>
-              <p>
-                As part of our customisation and sustainability solutions, we
-                oversee the entire process that our solutions from performance
-                to equipping of engineers to operate our equipment.
-              </p>
+            <h3>2015 Quality Award (ST Kinetics)</h3>
+            <div class="row mt-4">
+              <div class="col image-text">
+                <img
+                  src="./assets/images/portfolio-2.png"
+                  width="300px"
+                  alt=""
+                />
+                <p style="font-size: 1.3em; width: 600px;">
+                  Mr Remus Ong, Sales Manager of GBS was honoured to be
+                  presented the “Sales Achievement Award” for EKK Semicon
+                  Components, Inc at San Jose, California. Presenting the award
+                  was Mr Patrick Giorda, President of EKK Semicon, Inc. “This
+                  recognition serves as a big motivation to our Sales team “,
+                  said Remus Ong
+                </p>
+                <p style="font-size: 1.3em; margin-left: 0px;">
+                  EKKSC is a world leader in sealing products, Elastomer
+                  O-rings, Magnetic Vacuum Seals and Welded Edge Bellows for the
+                  semiconductor industry.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="credentials full-height">
-      <div class="container-fluid">
+    <section class="portfolio container-fluid mt-2">
+      <div class="container">
         <div class="row">
           <div class="col">
-            <h2>OUR CREDENTIALS</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-1.jpg" alt="">
+            <h3>
+              Partnerships for Capability Transformation (PACT) – By Spring
+              Singapore & ST Kinetics
+            </h3>
+            <div class="row mt-4">
+              <div class="col image-text">
+                <img
+                  src="./assets/images/portfolio-3.jpg"
+                  width="300px"
+                  alt=""
+                />
+                <p style="font-size: 1.3em; width: 600px;">
+                  GBS was selected to participate the PACT program organized by
+                  ST Kinetics, supported by Singapore Spring. Under the
+                  Partnerships for Capability Transformation (PACT) initiative,
+                  ST Kinetics will identify and implement collarborative
+                  projects with GBS with the aim of transferring know-how in
+                  enhancing our work processes such as Value-Stream Mapping, 5s
+                  and Kaizen skillsets.
+                </p>
+              </div>
             </div>
-            <p>2015 Quality Award (ST Kinetics)</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-2.jpg" alt="">
-            </div>
-            <p>Sales Achievement Award (EKK Semicon Components, Inc)</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-3.jpg" alt="">
-            </div>
-            <p>Partnerships for Capability Transformation (PACT) – By Spring Singapore & ST Kinetics</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-4.jpg" alt="">
-            </div>
-            <p>1st local refurbishment facility for Heater Pedestal processes with support from Spring Singapore in 2010 </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="map">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Our work is global, spanning over 12 countries.</h2>
-                </div>
+    <section class="portfolio container-fluid mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>
+              ISO Accredidated Since February 2014
+            </h3>
+            <div class="row mt-4">
+              <div class="col image-text">
+                <img
+                  src="./assets/images/portfolio-4.jpg"
+                  width="300px"
+                  alt=""
+                />
+                
+              </div>
             </div>
-            <div class="d-flex map-row">
-                <div class="col-md-1 map-list">
-                    <ul>
-                        <li>Singapore</li>
-                        <li>Malaysia</li>
-                        <li>China</li>
-                        <li>Taiwan</li>
-                        <li>USA</li>
-                        <li>France</li>
-                        <li>Japan</li>
-                        <li>Korea</li>
-                        <li>Austria</li>
-                        <li>Germany</li>
-                        <li>Israel</li>
-                    </ul>
-                </div>
-                <div class="col-md-11">
-                    <img src="./assets/images/map.jpg" alt="map">
-                </div>
-                <div class="col-md-auto"></div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- JS libraries -->
     <!-- Jquery -->
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    
+
     <!-- Common js -->
     <script src="./assets/js/common.js"></script>
   </body>
