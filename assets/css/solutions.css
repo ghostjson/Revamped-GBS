@@ -26,18 +26,17 @@
 .expansion .col-12 h5 {
   font-family: font-solution;
   font-size: 1.1em;
-  color: white;
   /* color: #70a0ac; */
 }
 
 .expansion .expand {
   cursor: pointer;
-  color: #527f92 !important;
+  color: #527f92;
   transition: all 0.8s;
 }
 
 .expansion .expand.expands {
-  color: white !important;
+  color: white  ;
 }
 
 .expansion .expand img {
