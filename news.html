@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GBS</title>
 
-
     <!-- Jqeury -->
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
 
@@ -18,270 +17,233 @@
 
     <!-- About Page Stylesheet -->
     <link rel="stylesheet" href="./assets/css/about.css" />
+
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+
+      article {
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid #527f92;
+      }
+
+      .article-heading {
+        background: #527f92;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+      }
+
+      .page-heading {
+        text-align: center;
+        padding-top: 30px;
+      }
+
+      .social-icons img {
+        width: 30px;
+      }
+
+      .aritcle-heading {
+        font-family: font-times;
+        color: #527f92;
+        font-size: 2em;
+        margin-top: 10px;
+      }
+
+      .article-description {
+        font-size: 1.5em;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .social-icons a {
+        margin: 0 5px;
+      }
+    </style>
   </head>
   <body>
-
     <nav class="menu">
-        <div class="close-btn">
-          <img src="./assets/icons/times-solid.svg" alt="hide">
-        </div>
-        <div class="show-btn">
-          <img src="./assets/icons/bars-solid.svg" alt="show">
-        </div>
-        <ul>
-          <li>
-              <a href="/"><img src="./assets/images/logo.png" alt="logo"></a>
-          </li>
-          <li>
-           <a href="/about.html">ABOUT US</a>
-          </li>
-          <li>
-              <a href="#" id="solution">SOLUTIONS</a>
-              <ul class="sub-menu">
-                <li class="">
-                 <a id="semi-conductor" href="#">SEMI-CONDUCTOR</a> 
-                </li>
-                <div class="sc-sub">
-                  <li class="sub">
-                    <a href="sc-sealing.html">SEALING SOLUTIONS</a>
-                  </li>
-                  <li class="sub">
-                    <a href="sc-heater.html">HEATER PEDESTALS</a>
-                  </li>
-                  <li class="sub">
-                      <a href="sc-optics.html">OPTICS & COATINGS</a>
-                  </li>
-                  <li class="sub">
-                      <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
-                  </li>
-                  <li class="sub">
-                      <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
-                  </li>
-                </div>
-                <li class="">
-                  <a id="transport" href="#">TRANSPORT</a> 
-                </li>
-                <div class="ts-sub">
-                  <li class="sub">
-                    <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
-                  </li>
-                  <li class="sub">
-                    <a href="ts-log.html">LOGISTICS</a>
-                  </li>
-                  <li class="sub">
-                    <a href="ts-mil.html">MILITARY</a>
-                  </li>
-                  <li class="sub">
-                    <a href="ts-ves.html">VEHICLE ENHANCEMENT SOLUTIONS</a>
-                  </li>
-                </div>
-              </ul>
-          </li>
-          <li>
-              <a href="portfolio.html">OUR PORTFOLIO</a>
-          </li>
-          <li >
-              <a class="active" href="news.html">NEWS & UPDATES</a>
-          </li>
-          <li>
-              <a href="/contact.html">CONTACT US</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="close-btn">
+        <img src="./assets/icons/times-solid.svg" alt="hide" />
+      </div>
+      <div class="show-btn">
+        <img src="./assets/icons/bars-solid.svg" alt="show" />
+      </div>
+      <ul>
+        <li>
+          <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        </li>
+        <li>
+          <a href="/about.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#" id="solution">SOLUTIONS</a>
+          <ul class="sub-menu">
+            <li class="">
+              <a id="semi-conductor" href="#">SEMI-CONDUCTOR</a>
+            </li>
+            <div class="sc-sub">
+              <li class="sub">
+                <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              </li>
+              <li class="sub">
+                <a href="sc-heater.html">HEATER PEDESTALS</a>
+              </li>
+              <li class="sub">
+                <a href="sc-optics.html">OPTICS & COATINGS</a>
+              </li>
+              <li class="sub">
+                <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              </li>
+              <li class="sub">
+                <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              </li>
+            </div>
+            <li class="">
+              <a id="transport" href="#">TRANSPORT</a>
+            </li>
+            <div class="ts-sub">
+              <li class="sub">
+                <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              </li>
+              <li class="sub">
+                <a href="ts-log.html">LOGISTICS</a>
+              </li>
+              <li class="sub">
+                <a href="ts-mil.html">MILITARY</a>
+              </li>
+              <li class="sub">
+                <a href="ts-ves.html">VEHICLE ENHANCEMENT SOLUTIONS</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a href="portfolio.html">OUR PORTFOLIO</a>
+        </li>
+        <li>
+          <a class="active" href="news.html">NEWS & UPDATES</a>
+        </li>
+        <li>
+          <a href="/contact.html">CONTACT US</a>
+        </li>
+      </ul>
+    </nav>
 
     <section class="about-banner">
       <div class="container-fluid">
-        <div class="row upper-about-banner">
+        <div
+          class="row upper-about-banner"
+          style="background-image: url('./assets/images/news-banner.jpg');"
+        >
           <div class="col heading">
-            <h2>ABOUT GBS</h2>
+            <h2>NEWS AND UPDATE</h2>
           </div>
         </div>
-        <div class="row lower-about-banner">
+        <div class="row article-heading">
           <div class="col">
-            <div class="container">
-              <p>
-                Established in 2003, GBS (Singapore) Pte Ltd have built a
-                reputation for our technical expertise and our ability to
-                develop solution-based products and services to meet our
-                customers' needs. This is made possible with our in-depth
-                knowledge of advanced technologies.
-              </p>
-              <p>
-                Over the years, we have grown to become a major supplier for
-                Semiconductor, Defence industries and its adjacent markets. We
-                value-add to our customers by developing a range of customised
-                solutions and applications to meet their needs.
-              </p>
-              <p>
-                With our extensive network of business partners, we can
-                complement our expertise with their competencies and deliver the
-                best solutions to our customers.
-              </p>
-            </div>
+            <p>ARTICLES</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="full-height vision">
-      <div class="container">
-        <div class="row">
-          <div class="col box-vision">
-            <div class="thumbnail">
-              <img src="./assets/images/visison.jpg" alt="vision" />
-            </div>
-            <div class="heading-vision">
-              <h2>Our Vision</h2>
-            </div>
-            <div class="content-vision">
-              <img src="./assets/images/triangle.png" alt="icon" />
-              <p>
-                To be the leading end-to-end solution provider in the
-                semiconductor and specialty transport industry.
-              </p>
-            </div>
-          </div>
-          <div class="col box-vision">
-            <div class="thumbnail">
-              <img src="./assets/images/vision2.jpg" alt="vision2" />
-            </div>
-            <div class="heading-vision">
-              <h2>Our Mission</h2>
-            </div>
-            <div class="content-vision">
-              <img src="./assets/images/triangle.png" alt="icon" />
-              <p>
-                To create sustainability by leveraging on our network and
-                partners’ core competencies to develop the expertise to support
-                our customer’s product and services.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="approach">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col heading-approach">
-            <h1>OUR APPROACH</h1>
-          </div>
-        </div>
-        <div class="row">
+        <div class="row page-heading">
           <div class="col">
-            <img src="./assets/images/our_approch.jpg" alt="approach" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <h3>Established Design & Development Process</h3>
-              <p>
-                From discovery and rapid prototyping to design verification and
-                validation. We aim to substantially reduce time-to-market
-                cycles.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="box">
-              <h3>Close Collaboration with All Our Customers & Partners</h3>
-              <p>
-                From problem identification to the deployment of the solutions,
-                we gain an in-depth insight to our customers' needs and
-                pain-points. It enables us to accurately scope and define the
-                specifications for their needed solutions.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <h3>On-site Technical Support & Commissioning</h3>
-              <p>
-                As part of our customisation and sustainability solutions, we
-                oversee the entire process that our solutions from performance
-                to equipping of engineers to operate our equipment.
-              </p>
-            </div>
+            <h2>Connecting You to Industries Worldwide</h2>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="credentials full-height">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <h2>OUR CREDENTIALS</h2>
-          </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <a href="#">
+            <article class="">
+              <img
+                width="100%"
+                src="./assets/images/article-image.jpg"
+                alt=""
+              />
+              <h3 class="aritcle-heading">
+                Most Downloaded Materials Science in Semiconductor Processing
+                Articles
+              </h3>
+              <p class="article-description">
+                The most downloaded articles from Materials Science in
+                Semiconductor Processing in the last 90 days.
+              </p>
+              <div class="social-icons">
+                <a href="#">
+                  <img src="./assets/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./assets/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./assets/icons/linkedin.svg" alt="" />
+                </a>
+              </div>
+            </article>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-1.jpg" alt="">
-            </div>
-            <p>2015 Quality Award (ST Kinetics)</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-2.jpg" alt="">
-            </div>
-            <p>Sales Achievement Award (EKK Semicon Components, Inc)</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-3.jpg" alt="">
-            </div>
-            <p>Partnerships for Capability Transformation (PACT) – By Spring Singapore & ST Kinetics</p>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <div class="image">
-              <img src="./assets/images/cre-4.jpg" alt="">
-            </div>
-            <p>1st local refurbishment facility for Heater Pedestal processes with support from Spring Singapore in 2010 </p>
-          </div>
+        <div class="col-md-12 mb-4">
+          <a href="#">
+            <article class="mt-4">
+              <h3 class="aritcle-heading">
+                Glass-assisted CVD growth of large-area MoS2, WS2 and MoSe2
+                monolayers on Si/SiO2 substrate
+              </h3>
+              <p class="article-description">
+                Gonca Uslu Özküçük | Cem Odacı | Ezgi Şahin | Feridun Ay | Nihan
+                Kosku Perkgöz
+              </p>
+              <div class="social-icons">
+                <a href="#">
+                  <img src="./assets/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./assets/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./assets/icons/linkedin.svg" alt="" />
+                </a>
+              </div>
+            </article>
+          </a>
+        </div>
+        <div class="col-md-12 mb-4">
+          <a href="#">
+            <article class="mt-4">
+              <h3 class="aritcle-heading">
+                Nickel oxide nanoparticles: Synthesis and spectral studies of
+                interactions with glucose
+              </h3>
+              <p class="article-description">
+                M. El-Kemary | N. Nagy | I. El-Mehasseb
+              </p>
+              <div class="social-icons">
+                <a href="#">
+                  <img src="./assets/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./assets/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./assets/icons/linkedin.svg" alt="" />
+                </a>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="map">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Our work is global, spanning over 12 countries.</h2>
-                </div>
-            </div>
-            <div class="d-flex map-row">
-                <div class="col-md-1 map-list">
-                    <ul>
-                        <li>Singapore</li>
-                        <li>Malaysia</li>
-                        <li>China</li>
-                        <li>Taiwan</li>
-                        <li>USA</li>
-                        <li>France</li>
-                        <li>Japan</li>
-                        <li>Korea</li>
-                        <li>Austria</li>
-                        <li>Germany</li>
-                        <li>Israel</li>
-                    </ul>
-                </div>
-                <div class="col-md-11">
-                    <img src="./assets/images/map.jpg" alt="map">
-                </div>
-                <div class="col-md-auto"></div>
-            </div>
-        </div>
-    </section>
-
+    </div>
 
     <!-- JS libraries -->
     <!-- Jquery -->
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    
+
     <!-- Common js -->
     <script src="./assets/js/common.js"></script>
   </body>
