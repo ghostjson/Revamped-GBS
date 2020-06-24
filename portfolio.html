@@ -18,6 +18,7 @@
     <!-- About Page Stylesheet -->
     <link rel="stylesheet" href="./assets/css/about.css" />
 
+
     <style>
       body {
         background-color: white;
@@ -51,6 +52,29 @@
         margin-left: 20px;
       }
 
+      .image-preview{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(12, 11, 11, 0.534);
+        z-index: 100;
+
+      }
+
+      .image-preview .close-button{
+        position:fixed;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+      }
+
+      .image-preview .close-button img{
+        width: 20px;
+      }
+
       @media (max-width: 1000px) {
         .image-text img {
           margin: 0 auto;
@@ -59,6 +83,15 @@
     </style>
   </head>
   <body>
+
+    <div class="image-preview">
+      <img id="preview" src="./assets/images/portfolio-3.jpg" alt="">
+      <div class="close-button">
+        <img src="./assets/icons/close.svg" alt="">
+      </div>
+    </div>
+
+
     <nav class="menu">
       <div class="close-btn">
         <img src="./assets/icons/times-solid.svg" alt="hide" />
@@ -162,7 +195,7 @@
             <h3>2015 Quality Award (ST Kinetics)</h3>
             <div class="row mt-4">
               <div class="col image-text">
-                <img src="./assets/images/cre-1.jpg" alt="" />
+                <img class="zoom-image" src="./assets/images/cre-1.jpg" alt="" />
                 <p class="mt-4" style="font-size: 1.3em;">
                   GBS was awarded the 2015 Quality Award from Singapore
                   Technologies Kinetics during the Supplier Forum held on the 3
@@ -185,7 +218,7 @@
             <h3>2015 Quality Award (ST Kinetics)</h3>
             <div class="row mt-4">
               <div class="col image-text">
-                <img
+                <img class="zoom-image"
                   src="./assets/images/portfolio-2.png"
                   width="300px"
                   alt=""
@@ -220,7 +253,7 @@
             </h3>
             <div class="row mt-4">
               <div class="col image-text">
-                <img
+                <img class="zoom-image"
                   src="./assets/images/portfolio-3.jpg"
                   width="300px"
                   alt=""
@@ -250,7 +283,7 @@
             </h3>
             <div class="row mt-4">
               <div class="col image-text">
-                <img
+                <img class="zoom-image"
                   src="./assets/images/portfolio-4.jpg"
                   width="300px"
                   alt=""
@@ -267,7 +300,21 @@
     <!-- Jquery -->
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
 
+
     <!-- Common js -->
     <script src="./assets/js/common.js"></script>
+
+
+    <script>
+      $('.image-preview').hide()
+      $('.zoom-image').click(function(){
+        let image_src = $(this).attr('src');
+        $('#preview').attr('src', image_src)
+        $('.image-preview').show()
+      })
+      $('.close-button').click(function(){
+        $('.image-preview').hide()
+      })
+    </script>
   </body>
 </html>
