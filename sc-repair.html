@@ -1,186 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GBS</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>GBS</title>
 
 
-    <!-- Jqeury -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <!-- Jqeury -->
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
 
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
-    <!-- Common Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/common.css" />
+  <!-- Common Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/common.css" />
 
-    <!-- About Page Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/about.css" />
+  <!-- About Page Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/about.css" />
 
-    <!-- About Page Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/solutions.css" />
-  </head>
-  <body>
+  <!-- About Page Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <style>
+    h6 {
+      font-weight: bold;
+      font-size: 25px;
+      margin-left: 0 !important;
+    }
+  </style>
+</head>
 
-    <nav class="menu">
-      <div class="close-btn">
-        <img src="./assets/icons/times-solid.svg" alt="hide" />
+<body>
+
+  <nav class="menu">
+    <div class="close-btn">
+      <img src="./assets/icons/times-solid.svg" alt="hide" />
+    </div>
+    <div class="show-btn">
+      <img src="./assets/icons/bars-solid.svg" alt="show" />
+    </div>
+    <ul>
+      <li>
+        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+      </li>
+      <li>
+        <a href="/about.html">ABOUT US</a>
+      </li>
+      <li>
+        <a href="#" class="active" id="solution">SOLUTIONS</a>
+        <ul class="sub-menu">
+          <li class="active">
+            <a id="semi-conductor" class="" href="#">SEMI-CONDUCTOR</a>
+          </li>
+          <div class="sc-sub">
+            <li class="sub">
+              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+            </li>
+            <li class="sub">
+              <a href="sc-heater.html">HEATER PEDESTALS</a>
+            </li>
+            <li class="sub">
+              <a href="sc-optics.html">OPTICS & COATINGS</a>
+            </li>
+            <li class="sub active">
+              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+            </li>
+            <li class="sub">
+              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+            </li>
+          </div>
+          <li class="">
+            <a id="transport" href="#">VISION SYSTEMS</a>
+          </li>
+          <div class="ts-sub">
+            <li class="sub">
+              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+            </li>
+            <li class="sub">
+              <a href="ts-log.html">LOGISTICS</a>
+            </li>
+            <li class="sub">
+              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+            </li>
+            <li class="sub">
+              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="portfolio.html">OUR PORTFOLIO</a>
+      </li>
+      <li>
+        <a href="#" id="news">NEWS & UPDATES</a>
+        <ul class="sub-news">
+          <li>
+            <a href="articles.html">ARTICLES</a>
+          </li>
+          <li class="">
+            <a href="career.html">CAREER OPPORTUNITIES</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/contact.html">CONTACT US</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="about-banner">
+    <div class="container-fluid">
+      <div class="row upper-about-banner"
+        style="background-image: url('./assets/images/repair-banner.jpg');background-position: bottom;">
       </div>
-      <div class="show-btn">
-        <img src="./assets/icons/bars-solid.svg" alt="show" />
-      </div>
-      <ul>
-        <li>
-          <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
-        </li>
-        <li>
-          <a href="/about.html">ABOUT US</a>
-        </li>
-        <li>
-          <a href="#" class="active" id="solution">SOLUTIONS</a>
-          <ul class="sub-menu">
-            <li class="active">
-              <a id="semi-conductor" class="" href="#">SEMI-CONDUCTOR</a>
-            </li>
-            <div class="sc-sub">
-              <li class="sub">
-                <a href="sc-sealing.html">SEALING SOLUTIONS</a>
-              </li>
-              <li class="sub">
-                <a href="sc-heater.html">HEATER PEDESTALS</a>
-              </li>
-              <li class="sub">
-                <a href="sc-optics.html">OPTICS & COATINGS</a>
-              </li>
-              <li class="sub active">
-                <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
-              </li>
-              <li class="sub">
-                <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
-              </li>
-            </div>
-            <li class="">
-              <a id="transport" href="#">VISION SYSTEMS</a>
-            </li>
-            <div class="ts-sub">
-              <li class="sub">
-                <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
-              </li>
-              <li class="sub">
-                <a href="ts-log.html">LOGISTICS</a>
-              </li>
-              <li class="sub">
-                <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
-              </li>
-              <li class="sub">
-                <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
-              </li>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <a href="portfolio.html">OUR PORTFOLIO</a>
-        </li>
-        <li>
-          <a href="#" id="news">NEWS & UPDATES</a>
-          <ul class="sub-news">
-            <li>
-              <a href="articles.html">ARTICLES</a>
-            </li>
-            <li class="">
-              <a href="career.html">CAREER OPPORTUNITIES</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="/contact.html">CONTACT US</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="row lower-about-banner">
+        <div class="col">
+          <div class="container">
+            <h3>Semiconductor –Repair & Refurbishment</h3>
+            <p>
+              We offer refurbishment/repair services for lasers and
+              electromechanical systems.
+            </p>
+            <p>
+              Parts received are disassembled and inspected in a clean room
+              facility. Irreparable components are replaced and working parts
+              are thoroughly cleaned and calibrated for reassembling and
+              testing.
 
-    <section class="about-banner">
-      <div class="container-fluid">
-        <div class="row upper-about-banner" style="background-image: url('./assets/images/repair-banner.jpg')">
-          <div class="col heading">
-            <h2>SOLUTIONS</h2>
+            </p>
+
+            <p>Benefits:</p>
+            <ul>
+              <li>Quick turnaround time for repaired parts </li>
+              <li>Extended product life expectancy</li>
+              <li>Guaranteed working functionality for repaired parts (Proprietary Functional tests)</li>
+              <li>Lower production downtime & replacement cost</li>
+            </ul>
+
+            <p>Here are some of the products we repair/refurbish:</p>
           </div>
         </div>
-        <div class="row lower-about-banner">
-          <div class="col">
-            <div class="container">
-                <h3>Semiconductor –Repair & Refurbishment</h3>
-                <p>  
-                    We offer refurbishment/repair services for lasers and
-                     electromechanical systems.
-              </p>
-              <p>
-                  Parts received are disassembled and inspected in a clean room 
-                  facility. Irreparable components are replaced and working parts
-                   are thoroughly cleaned and calibrated for  reassembling and 
-                  testing. 
+      </div>
+    </div>
+  </section>
 
-              </p>
 
-              <p>Benefits:</p>
-              <ul>
-                <li>Quick turnaround time for repaired parts </li>
-                <li>Extended product life expectancy</li>
-                <li>Guaranteed working functionality for repaired parts (Proprietary Functional tests)</li>
-                <li>Lower production downtime & replacement cost</li>
-              </ul>
+  <section class="expansion">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Lasers </h4>
+            <div class="exp-content">
+              <div class="text">
+                <img src="./assets/images/solutions/lasers2.png" alt="">
+                <img src="./assets/images/solutions/laser-refurbishing.png" alt="">
+                <img src="./assets/images/solutions/laser-head-refur.png" alt="">
 
-              <p>Here are some of the products we repair/refurbish:</p>
+              </div>
+              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              </a>
             </div>
-          </div>
+        </div>
+        <div class="col-12">
+          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Valves </h4>
+            <div class="exp-content">
+              <div class="text">
+                <img src="./assets/images/solutions/gate-value.png" alt="">
+                <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
+                  <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="col-12">
+          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Pumps </h4>
+            <div class="exp-content">
+              <div class="text">
+                <img src="./assets/images/solutions/chemical-pumps.png" alt="">
+                <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
+                  <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="col-12">
+          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Robots </h4>
+            <div class="exp-content">
+              <div class="text">
+                <img src="./assets/images/solutions/robots.png" alt="">
+                <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
+                  <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+                </a>
+              </div>
+            </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-   
-    <section class="expansion">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="expand" > <img src="./assets/images/triangle.png" width="30px"> Lasers </h4>
-                    <div class="exp-content">
-                      <div class="text">
-                        <img src="./assets/images/solutions/lasers2.png" alt="">
-                        <img src="./assets/images/solutions/laser-refurbishing.png" alt="">
-                        <img src="./assets/images/solutions/laser-head-refur.png" alt="">
-                      </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <h5 class="expand"> <img  src="./assets/images/triangle.png" width="30px"> Gate Valves </h4>
-                    <div class="exp-content">
-                        <div class="text">
-                          <img src="./assets/images/solutions/gate-value.png" alt="">
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12">
-                  <h5 class="expand"> <img  src="./assets/images/triangle.png" width="30px"> Chemical Pumps </h4>
-                  <div class="exp-content">
-                    <div class="text">
-                      <img src="./assets/images/solutions/chemical-pumps.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                    <h5 class="expand"> <img  src="./assets/images/triangle.png" width="30px"> Robots </h4>
-                    <div class="exp-content">
-                      <div class="text">
-                        <img src="./assets/images/solutions/robots.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="common-problems">
+  <!-- <section class="common-problems">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -235,14 +255,15 @@
       </div>
     </section> -->
 
-    
 
 
-    <!-- JS libraries -->
-    <!-- Jquery -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    
-    <!-- Common js -->
-    <script src="./assets/js/common.js"></script>
-  </body>
+
+  <!-- JS libraries -->
+  <!-- Jquery -->
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+
+  <!-- Common js -->
+  <script src="./assets/js/common.js"></script>
+</body>
+
 </html>
