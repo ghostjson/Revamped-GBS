@@ -184,11 +184,20 @@ h6 {
     margin-bottom: 5px;
     width: 95px !important;
 }
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex ul {
+    margin-left: 20px;
+}
 @media (max-width: 1000px) {
     .expansion .col-12 {
         padding: 10px 5vw;
     }
-
+    .flex {
+        flex-direction: column;
+    }
     .common-problems {
         margin-left: 2vw;
     }
