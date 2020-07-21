@@ -184,9 +184,13 @@ h6 {
     margin-bottom: 5px;
     width: 95px !important;
 }
+
 .flex {
     display: flex;
     align-items: center;
+}
+.flex h3 {
+    margin-left: 1.5rem !important;
 }
 .flex ul {
     margin-left: 20px;
@@ -200,6 +204,10 @@ h6 {
     }
     .flex {
         flex-direction: column;
+        align-items: initial;
+    }
+    .flex h3 {
+        margin-left: 0 !important;
     }
     .ad-btm-img {
         width: 100%;
