@@ -250,6 +250,31 @@ h6 {
 }
 
 @media (max-width: 1000px) {
+
+
+  .slide-set-large .thumbnail .staged img {
+  width: 240px !important;
+  height: 200px !important;
+  cursor: pointer;
+}
+
+.slide-set-large .non-staged {
+display: flex;
+  flex-direction: column;
+  height: 250px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.slide-set-large .non-staged > img {
+  width: 80px !important;
+  height: 80px !important;
+  margin: 2px !important;
+  cursor: pointer;
+}
+
+
+
   .expansion .col-12 {
     padding: 10px 5vw;
   }
