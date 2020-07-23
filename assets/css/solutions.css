@@ -10,7 +10,7 @@
 
 .expansion .col-12 {
   margin-top: 30px;
-  padding: 30px 180px;
+  padding: 30px 140px;
   font-size: 1.5em;
 }
 
@@ -117,12 +117,10 @@ h6 {
 
 .expansion .col-12:first-child .text img {
   height: 280px;
-  margin-top: 30px;
 }
 
 .expansion .col-12:nth-child(2) .text img {
   height: 680px;
-  margin-top: 10px;
 }
 
 .expansion .col-12:nth-child(3) .text img {
@@ -223,8 +221,12 @@ h6 {
 .slide-set .non-staged > img {
   width: 80px !important;
   height: 80px !important;
-  margin: 2px !important;
+  margin: 2px;
   cursor: pointer;
+}
+
+.slide-set .non-staged > img:first-child{
+  margin-top: 0px !important;
 }
 
 
@@ -254,7 +256,7 @@ h6 {
 
   .slide-set-large .thumbnail .staged img {
   width: 240px !important;
-  height: 200px !important;
+  height: 250px !important;
   cursor: pointer;
 }
 
