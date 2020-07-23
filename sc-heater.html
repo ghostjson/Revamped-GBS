@@ -24,7 +24,8 @@
 
   <!-- Lightbox links  -->
   <link rel="stylesheet" href="./assets/css/lightbox.min.css">
-  <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <style>
     h6 {
       font-weight: bold;
@@ -151,14 +152,20 @@
               </p>
             </div>
             <div class="img-p" style="display: block;">
-              <div class="">
-                <a href="./assets/images/solutions/heater/1.png" data-lightbox="heater-pedastals">
-                  <img src="./assets/images/solutions/heater/heater-thumbnail.png" height="225px" alt="">
-                </a>
-                <a href="./assets/images/solutions/heater/2.png" data-lightbox="heater-pedastals"></a>
-                <a href="./assets/images/solutions/heater/3.png" data-lightbox="heater-pedastals"></a>
-                <a href="./assets/images/solutions/heater/4.png" data-lightbox="heater-pedastals"></a>
+              <div class="slide-set">
+                <div class="thumbnail">
+                  <div class="staged">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="heater-staged" src="./assets/images/solutions/heater/1.png">
+                  </div>
+                </div>
+                <div class="non-staged">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/1.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/2.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/3.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/4.png">
+                </div>
               </div>
+              
               <div class="content mt-3">
                 <h6>Benefits</h6>
                 <p style="margin-left: 0 !important;">Our advanced customised solutions offer</p>

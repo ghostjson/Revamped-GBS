@@ -63,3 +63,15 @@ $("#news").click(function () {
   $(".sub-menu").slideUp();
   $(".sub-news").slideToggle();
 })
+
+
+// solution page slide show
+function changeSlide(event, parent) {
+  let src = $(event.target).attr('src');
+  $(`#${parent}`).attr('src', src);
+}
+
+function zoomStaged(event) {
+  let img = $(event.target);
+  
+}
