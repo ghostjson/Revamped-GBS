@@ -196,8 +196,9 @@ h6 {
   width: 55%;
 }
 
-.slide-set, .slide-set-large{
-    display: flex;
+.slide-set,
+.slide-set-large {
+  display: flex;
 }
 
 .slide-set .thumbnail {
@@ -225,10 +226,9 @@ h6 {
   cursor: pointer;
 }
 
-.slide-set .non-staged > img:first-child{
+.slide-set .non-staged > img:first-child {
   margin-top: 0px !important;
 }
-
 
 .slide-set-large .thumbnail .staged img {
   width: 500px !important;
@@ -253,30 +253,14 @@ h6 {
 
 @media (max-width: 1000px) {
 
+  
 
-  .slide-set-large .thumbnail .staged img {
-  width: 240px !important;
-  height: 250px !important;
-  cursor: pointer;
-}
-
-.slide-set-large .non-staged {
-display: flex;
-  flex-direction: column;
-  height: 250px !important;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.slide-set-large .non-staged > img {
-  width: 80px !important;
-  height: 80px !important;
-  margin: 2px !important;
-  cursor: pointer;
-}
-
-
-
+  .slide-set-large .non-staged > img {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 2px !important;
+    cursor: pointer;
+  }
 
   .expansion .col-12 {
     padding: 10px 5vw;
@@ -355,9 +339,27 @@ display: flex;
 }
 
 @media (max-width: 600px) {
-  .expansion .col-12:first-child .text img {
-    margin-left: 0px;
+
+  .slide-set-large {
+    display: flex;
+    flex-direction: column;
   }
+
+  .slide-set-large .thumbnail .staged img {
+    width: 90vw !important;
+    height: 200px !important;
+    cursor: pointer;
+  }
+
+  .slide-set-large .non-staged {
+    display: flex;
+    flex-direction: row;
+    height: 80px !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
 
   .container {
     padding: 0px;
@@ -405,4 +407,8 @@ display: flex;
   .common-problems h3 {
     margin-top: 0px !important;
   }
+}
+
+@media (max-width: 800px) {
+
 }
