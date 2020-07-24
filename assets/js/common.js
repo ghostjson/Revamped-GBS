@@ -68,7 +68,13 @@ $("#news").click(function () {
 // solution page slide show
 function changeSlide(event, parent) {
   let src = $(event.target).attr('src');
+  let title = $(event.target).attr('data-title');
+
+
   $(`#${parent}`).attr('src', src);
+
+  $(`#${parent}`).parent().siblings('.slide-title').text(title);
+
 }
 
 function zoomStaged(event) {
