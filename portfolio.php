@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Portfolio
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,16 +12,16 @@
     <title>GBS</title>
 
     <!-- Jqeury -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
     <!-- Common Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
     <!-- About Page Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
 
     <style>
@@ -84,26 +89,26 @@
   <body>
 
     <div class="image-preview">
-      <img id="preview" src="./assets/images/portfolio-3.jpg" alt="">
+      <img id="preview" src="<?= get_stylesheet_directory_uri() ?>/assets/images/portfolio-3.jpg" alt="">
       <div class="close-button">
-        <img src="./assets/icons/close.svg" alt="">
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/close.svg" alt="">
       </div>
     </div>
 
 
     <nav class="menu">
       <div class="close-btn">
-        <img src="./assets/icons/times-solid.svg" alt="hide" />
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
       </div>
       <div class="show-btn">
-        <img src="./assets/icons/bars-solid.svg" alt="show" />
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
       </div>
       <ul>
         <li>
-          <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+          <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
         </li>
         <li>
-          <a href="/about.html">ABOUT US</a>
+          <a href="/about">ABOUT US</a>
         </li>
         <li>
           <a href="#" id="solution">SOLUTIONS</a>
@@ -113,19 +118,19 @@
             </li>
             <div class="sc-sub">
               <li class="sub">
-                <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+                <a href="sc-sealing">SEALING SOLUTIONS</a>
               </li>
               <li class="sub">
-                <a href="sc-heater.html">HEATER PEDESTALS</a>
+                <a href="sc-heater">HEATER PEDESTALS</a>
               </li>
               <li class="sub">
-                <a href="sc-optics.html">OPTICS & COATINGS</a>
+                <a href="sc-optics">OPTICS & COATINGS</a>
               </li>
               <li class="sub">
-                <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+                <a href="sc-repair">REPAIR & REFURBISHMENT</a>
               </li>
               <li class="sub">
-                <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+                <a href="sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
               </li>
             </div>
             <li class="">
@@ -133,43 +138,43 @@
             </li>
             <div class="ts-sub">
               <li class="sub">
-                <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+                <a href="ts-urban">URBAN & MUNICIPAL VEHICLES</a>
               </li>
               <li class="sub">
-                <a href="ts-log.html">LOGISTICS</a>
+                <a href="ts-log">LOGISTICS</a>
               </li>
               <li class="sub">
-                <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+                <a href="ts-mil">MILITARY & HOMELAND SECURITY</a>
               </li>
               <li class="sub">
-                <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+                <a href="ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
               </li>
             </div>
           </ul>
         </li>
         <li>
-          <a href="portfolio.html" class="active">OUR PORTFOLIO</a>
+          <a href="portfolio" class="active">OUR PORTFOLIO</a>
         </li>
         <li>
           <a href="#" id="news">NEWS & UPDATES</a>
           <ul class="sub-news">
             <li>
-              <a href="articles.html">ARTICLES</a>
+              <a href="articles">ARTICLES</a>
             </li>
             <li class="">
-              <a href="career.html">CAREER OPPORTUNITIES</a>
+              <a href="career">CAREER OPPORTUNITIES</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="/contact.html">CONTACT US</a>
+          <a href="/contact">CONTACT US</a>
         </li>
       </ul>
     </nav>
 
     <section class="about-banner" >
       <div class="container-fluid">
-        <div class="row upper-about-banner"  style="background-image: url('./assets/images/portfolio-banner.jpg');background-position: center;">
+        <div class="row upper-about-banner"  style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/portfolio-banner.jpg');background-position: center;">
           <div class="col heading">
             <h2>OUR PORTFOLIO</h2>
           </div>
@@ -184,7 +189,7 @@
               <img
                 style="width: 100%;"
                 class="portfolio-img"
-                src="./assets/images/portfolio.jpg"
+                src="<?= get_stylesheet_directory_uri() ?>/assets/images/portfolio.jpg"
                 alt=""
               />
 
@@ -202,7 +207,7 @@
             <h3>2015 Quality Award (ST Kinetics)</h3>
             <div class="row mt-4">
               <div class="col image-text">
-                <img class="zoom-image" src="./assets/images/cre-1.jpg" alt="" />
+                <img class="zoom-image" src="<?= get_stylesheet_directory_uri() ?>/assets/images/cre-1.jpg" alt="" />
                 <p class="mt-4" style="font-size: 1.3em;">
                   GBS was awarded the 2015 Quality Award from Singapore
                   Technologies Kinetics during the Supplier Forum held on the 3
@@ -226,7 +231,7 @@
             <div class="row mt-4">
               <div class="col image-text">
                 <img class="zoom-image"
-                  src="./assets/images/portfolio-2.png"
+                  src="<?= get_stylesheet_directory_uri() ?>/assets/images/portfolio-2.png"
                   width="300px"
                   alt=""
                 />
@@ -261,7 +266,7 @@
             <div class="row mt-4">
               <div class="col image-text">
                 <img class="zoom-image"
-                  src="./assets/images/portfolio-3.jpg"
+                  src="<?= get_stylesheet_directory_uri() ?>/assets/images/portfolio-3.jpg"
                   width="300px"
                   alt=""
                 />
@@ -291,7 +296,7 @@
             <div class="row mt-4">
               <div class="col image-text">
                 <img class="zoom-image"
-                  src="./assets/images/portfolio-4.jpg"
+                  src="<?= get_stylesheet_directory_uri() ?>/assets/images/portfolio-4.jpg"
                   width="300px"
                   alt=""
                 />
@@ -305,11 +310,11 @@
 
     <!-- JS libraries -->
     <!-- Jquery -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
 
     <!-- Common js -->
-    <script src="./assets/js/common.js"></script>
+    <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 
 
     <script>

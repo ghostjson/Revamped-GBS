@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Heater
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,22 +13,22 @@
   <title>GBS</title>
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/solutions.css" />
 
   <!-- Lightbox links  -->
-  <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/lightbox.min.css">
 
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <style>
@@ -38,17 +43,17 @@
 <body>
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a href="/about.html">ABOUT US</a>
+        <a href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" class="active" id="solution">SOLUTIONS</a>
@@ -58,19 +63,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub active">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="">
@@ -78,36 +83,36 @@
           </li>
           <div class="ts-sub">
             <li class="sub">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news">NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="articles">ARTICLES</a>
           </li>
           <li class="">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
@@ -115,7 +120,7 @@
   <section class="about-banner">
     <div class="container-fluid">
       <div class="row upper-about-banner" style="
-            background: url('./assets/images/sc-heater.jpg');
+            background: url('<?= get_stylesheet_directory_uri() ?>/assets/images/sc-heater.jpg');
             background-position: bottom;
           ">
       </div>
@@ -155,14 +160,14 @@
               <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="heater-staged" src="./assets/images/solutions/heater/1.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="heater-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/heater/1.png">
                   </div>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/1.png">
-                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/2.png">
-                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/3.png">
-                  <img onclick="changeSlide(event, 'heater-staged')" src="./assets/images/solutions/heater/4.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/heater/1.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/heater/2.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/heater/3.png">
+                  <img onclick="changeSlide(event, 'heater-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/heater/4.png">
                 </div>
               </div>
               
@@ -198,8 +203,8 @@
 
             </div>
           </div>
-          <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-            <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+          <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+            <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
           </a>
         </div>
 
@@ -273,10 +278,10 @@
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>

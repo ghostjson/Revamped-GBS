@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Assets
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,19 +14,19 @@
 
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/solutions.css" />
   <style>
     h6 {
       font-weight: bold;
@@ -35,17 +40,17 @@
 
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a href="/about.html">ABOUT US</a>
+        <a href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" class="active" id="solution">SOLUTIONS</a>
@@ -55,19 +60,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub active">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="">
@@ -75,36 +80,36 @@
           </li>
           <div class="ts-sub">
             <li class="sub">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news">NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="articles">ARTICLES</a>
           </li>
           <li class="">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
@@ -112,7 +117,7 @@
   <section class="about-banner">
     <div class="container-fluid">
       <div class="row upper-about-banner"
-        style="background-image: url('./assets/images/assets-banner.jpg');background-position: bottom;">
+        style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/assets-banner.jpg');background-position: bottom;">
       </div>
       <div class="row lower-about-banner">
         <div class="col">
@@ -120,7 +125,7 @@
             <h3>Semiconductor - Asset Enhancement Solutions</h3>
 
             <h4>All in One GoBot system</h4>
-            <img src="./assets/images/solutions/gobot-system.jpg" class="gsys-img">
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/gobot-system.jpg" class="gsys-img">
             <p>
               Wafer fabs need to shift from reactive to proactive maintenance strategies.
               It is reported unplanned downtime costs 10 times more than scheduled
@@ -154,15 +159,15 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Data mining using IOT sensors </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Data mining using IOT sensors </h5>
             <div class="exp-content">
               <div class="text">
-                <img src="./assets/images/solutions/msd-systems.jpg" class="data-min" alt="">
+                <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/msd-systems.jpg" class="data-min" alt="">
               </div>
               <h4>Multi-sensory device (MSD)</h4>
               <div class="data-min-img-p">
                 <div class="image">
-                  <img src="./assets/images/solutions/solutions-msd.jpg">
+                  <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/solutions-msd.jpg">
                 </div>
                 <div class="content">
                   <p>
@@ -186,7 +191,7 @@
               <h4>Example Photo Resist flow sensor</h4>
               <div class="img-p">
                 <div class="image">
-                  <img src="./assets/images/solutions/example.jpg">
+                  <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/example.jpg">
                 </div>
                 <div class="content">
                   <h6>Key Benefits:</h6>
@@ -198,14 +203,14 @@
                   </ul>
                 </div>
               </div>
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Remote Control Management (RCM)
-            </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Remote Control Management (RCM)
+            </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -230,13 +235,13 @@
                 </ul>
               </div>
 
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Learning A.I. </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Learning A.I. </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -268,8 +273,8 @@
                 </ul>
               </div>
 
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
 
@@ -341,10 +346,10 @@
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>

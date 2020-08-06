@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: ADAS
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,23 +14,23 @@
 
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/solutions.css" />
 
   <!-- Lightbox -->
-  <link rel="stylesheet" href="./assets/css/lightbox.min.css">
-  <script defer src="./assets/js/lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/lightbox.min.css">
+  <script defer src="<?= get_stylesheet_directory_uri() ?>/assets/js/lightbox-plus-jquery.min.js"></script>
   <style>
     h6 {
       font-weight: bold;
@@ -59,17 +64,17 @@
 
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a href="/about.html">ABOUT US</a>
+        <a href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" class="active" id="solution">SOLUTIONS</a>
@@ -79,19 +84,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="active">
@@ -99,43 +104,43 @@
           </li>
           <div class="ts-sub">
             <li class="sub">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub active">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news">NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="articles">ARTICLES</a>
           </li>
           <li class="">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
 
   <section class="about-banner">
     <div class="container-fluid">
-      <div class="row upper-about-banner" style="background-image: url('./assets/images/ts-ves-banner.jpg')">
+      <div class="row upper-about-banner" style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/ts-ves-banner.jpg')">
         <div class="col heading">
           <h2>SOLUTIONS</h2>
         </div>
@@ -175,7 +180,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV 2 </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> AMV 2 </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -213,20 +218,20 @@
                 <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amv2-staged" src="./assets/images/solutions/ADAS/AMV2/1.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amv2-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/1.png">
                   </div>
                   <h6 class="slide-title mb-5">BUS</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="BUS" src="./assets/images/solutions/ADAS/AMV2/1.png">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="RIGID LORRY"  src="./assets/images/solutions/ADAS/AMV2/2.png">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="ROAD SWEEPER"  src="./assets/images/solutions/ADAS/AMV2/3.png">
-                  <!-- <img onclick="changeSlide(event, 'amv2-staged')" data-title="AMBULANCES" src="./assets/images/solutions/ADAS/AMV2/4.png"> -->
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="GARBAGE TRUCK" src="./assets/images/solutions/ADAS/AMV2/5.png">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="LOW LOADER" src="./assets/images/solutions/ADAS/AMV2/6.png">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="PRIME MOVER" src="./assets/images/solutions/ADAS/AMV2/7.png">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="COURIER" src="./assets/images/solutions/ADAS/AMV2/8.png">
-                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="REACH STACKER" src="./assets/images/solutions/ADAS/AMV2/9.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="BUS" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/1.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="RIGID LORRY"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/2.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="ROAD SWEEPER"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/3.png">
+                  <!-- <img onclick="changeSlide(event, 'amv2-staged')" data-title="AMBULANCES" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/4.png"> -->
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="GARBAGE TRUCK" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/5.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="LOW LOADER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/6.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="PRIME MOVER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/7.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="COURIER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/8.png">
+                  <img onclick="changeSlide(event, 'amv2-staged')" data-title="REACH STACKER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV2/9.png">
 
                 </div>
               </div>
@@ -235,13 +240,13 @@
                   </div>
                 </div>
               </div>
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV 4 </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> AMV 4 </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -274,15 +279,15 @@
               <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amv4-staged" src="./assets/images/solutions/ADAS/AMV4/1.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amv4-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV4/1.png">
                   </div>
                   <h6 class="slide-title mb-5">BUS</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="BUS" src="./assets/images/solutions/ADAS/AMV4/1.png">
-                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="SEMITRAILER TRUCK" src="./assets/images/solutions/ADAS/AMV4/2.png">
-                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="PETROL TANKER" src="./assets/images/solutions/ADAS/AMV4/3.png">
-                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="FIRE TRUCK" src="./assets/images/solutions/ADAS/AMV4/4.png">
+                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="BUS" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV4/1.png">
+                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="SEMITRAILER TRUCK" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV4/2.png">
+                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="PETROL TANKER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV4/3.png">
+                  <img onclick="changeSlide(event, 'amv4-staged')" data-title="FIRE TRUCK" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV4/4.png">
 
                 </div>
               </div>
@@ -291,13 +296,13 @@
                   </div>
                 </div>
               </div>
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV 360 </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> AMV 360 </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -331,15 +336,15 @@
               <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amv360-staged" src="./assets/images/solutions/ADAS/AMV360/1.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amv360-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV360/1.png">
                   </div>
                   <h6 class="slide-title mb-5">SEMITRAILER TRUCK</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="SEMITRAILER TRUCK" src="./assets/images/solutions/ADAS/AMV360/1.png">
-                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="PETROL TANKER" src="./assets/images/solutions/ADAS/AMV360/2.png">
-                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="HEAVY HAULAGE SYSTEM" src="./assets/images/solutions/ADAS/AMV360/3.png">
-                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="FIRE TRUCK" src="./assets/images/solutions/ADAS/AMV360/4.png">
+                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="SEMITRAILER TRUCK" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV360/1.png">
+                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="PETROL TANKER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV360/2.png">
+                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="HEAVY HAULAGE SYSTEM" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV360/3.png">
+                  <img onclick="changeSlide(event, 'amv360-staged')" data-title="FIRE TRUCK" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMV360/4.png">
 
                 </div>
               </div>
@@ -347,13 +352,13 @@
                   </div>
                 </div>
               </div>
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> AMV (R) </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> AMV (R) </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -392,25 +397,25 @@
               <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amvr-staged" src="./assets/images/solutions/ADAS/AMVR/1.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="amvr-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/1.png">
                   </div>
                   <h6 class="slide-title mb-5">MILITARY LIGHT UTILITY VEHICLE</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="MILITARY LIGHT UTILITY VEHICLE" src="./assets/images/solutions/ADAS/AMVR/1.png">
-                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="ARMOURED FIGHTING VEHICLE" src="./assets/images/solutions/ADAS/AMVR/2.png">
-                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="RECONNAISSANCE VEHICLE" src="./assets/images/solutions/ADAS/AMVR/3.png">
-                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="MILITARY ENGINEERING VEHICLE" src="./assets/images/solutions/ADAS/AMVR/4.png">
-                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="MILITARY AMBULANCES" src="./assets/images/solutions/ADAS/AMVR/5.png">
-                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="ELECTRONIC WARFARE VEHICLE" src="./assets/images/solutions/ADAS/AMVR/6.png">
+                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="MILITARY LIGHT UTILITY VEHICLE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/1.png">
+                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="ARMOURED FIGHTING VEHICLE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/2.png">
+                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="RECONNAISSANCE VEHICLE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/3.png">
+                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="MILITARY ENGINEERING VEHICLE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/4.png">
+                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="MILITARY AMBULANCES" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/5.png">
+                  <img onclick="changeSlide(event, 'amvr-staged')" data-title="ELECTRONIC WARFARE VEHICLE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/AMVR/6.png">
 
                 </div>
               </div>
 
                   </div>
                 </div>
-                <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                  <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+                <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                  <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
                 </a>
               </div>
             </div>
@@ -447,16 +452,16 @@
               <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="op-staged" src="./assets/images/solutions/ADAS/Addon/1.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="op-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/Addon/1.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">DRIVER USING PHONE</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER USING PHONE" src="./assets/images/solutions/ADAS/Addon/1.png">
-                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER YAWNING"  src="./assets/images/solutions/ADAS/Addon/2.png">
-                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER SMOKING"  src="./assets/images/solutions/ADAS/Addon/3.png">
-                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER DISTRACTED"  src="./assets/images/solutions/ADAS/Addon/4.png">
-                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER FALLING ASLEEP"  src="./assets/images/solutions/ADAS/Addon/5.png">
+                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER USING PHONE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/Addon/1.png">
+                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER YAWNING"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/Addon/2.png">
+                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER SMOKING"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/Addon/3.png">
+                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER DISTRACTED"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/Addon/4.png">
+                  <img onclick="changeSlide(event, 'op-staged')" data-title="DRIVER FALLING ASLEEP"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ADAS/Addon/5.png">
 
                 </div>
               </div>
@@ -525,10 +530,10 @@
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>

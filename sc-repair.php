@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Repair
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,23 +14,23 @@
 
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/solutions.css" />
 
   <!-- Lightbox -->
-  <link rel="stylesheet" href="./assets/css/lightbox.min.css">
-  <script defer src="./assets/js/lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/lightbox.min.css">
+  <script defer src="<?= get_stylesheet_directory_uri() ?>/assets/js/lightbox-plus-jquery.min.js"></script>
   <style>
     h6 {
       font-weight: bold;
@@ -54,17 +59,17 @@
 
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a href="/about.html">ABOUT US</a>
+        <a href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" class="active" id="solution">SOLUTIONS</a>
@@ -74,19 +79,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub active">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="">
@@ -94,36 +99,36 @@
           </li>
           <div class="ts-sub">
             <li class="sub">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news">NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="articles">ARTICLES</a>
           </li>
           <li class="">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
@@ -131,7 +136,7 @@
   <section class="about-banner">
     <div class="container-fluid">
       <div class="row upper-about-banner"
-        style="background-image: url('./assets/images/repair-banner.jpg');background-position: bottom;">
+        style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/repair-banner.jpg');background-position: bottom;">
       </div>
       <div class="row lower-about-banner">
         <div class="col">
@@ -170,7 +175,7 @@
       <div class="row">
 
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Lasers </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Lasers </h5>
             <div class="exp-content">
               <!-- Image block starts here -->
               <h3 class="mb-4 mt-4">Lasers for Semiconductor Wafer Inspection
@@ -179,15 +184,15 @@
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="laser-staged" src="./assets/images/solutions/repair/KLA PUMA 9000, 9100 LASER.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="laser-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/KLA PUMA 9000, 9100 LASER.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">KLA PUMA 9000, 9100 LASER</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'laser-staged')" data-title="KLA PUMA 9000, 9100 LASER" src="./assets/images/solutions/repair/KLA PUMA 9000, 9100 LASER.png">
-                  <img onclick="changeSlide(event, 'laser-staged')" data-title="HITACHI IS3000 LASER" src="./assets/images/solutions/repair/HITACHI IS3000 LASER.png">
-                <img onclick="changeSlide(event, 'laser-staged')" data-title="SONY BS65" src="./assets/images/solutions/repair/SONY BS65.png">
-                  <img onclick="changeSlide(event, 'laser-staged')" data-title="SONY BS76" src="./assets/images/solutions/repair/SONY BS76.png">
+                  <img onclick="changeSlide(event, 'laser-staged')" data-title="KLA PUMA 9000, 9100 LASER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/KLA PUMA 9000, 9100 LASER.png">
+                  <img onclick="changeSlide(event, 'laser-staged')" data-title="HITACHI IS3000 LASER" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/HITACHI IS3000 LASER.png">
+                <img onclick="changeSlide(event, 'laser-staged')" data-title="SONY BS65" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SONY BS65.png">
+                  <img onclick="changeSlide(event, 'laser-staged')" data-title="SONY BS76" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SONY BS76.png">
                 </div>
               </div>
 
@@ -200,13 +205,13 @@
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="spectra-staged" src="./assets/images/solutions/repair/SPECTRA PHYSICS PROLITE DIODE.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="spectra-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SPECTRA PHYSICS PROLITE DIODE.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">SPECTRA PHYSICS PROLITE DIODIDE</h6>
                 </div>
                 <div class="non-staged mb-4">
-                  <img onclick="changeSlide(event, 'spectra-staged')" data-title="SPECTRA PHYSICS PROLITE DIODIDE" src="./assets/images/solutions/repair/SPECTRA PHYSICS PROLITE DIODE.png">
-                  <img onclick="changeSlide(event, 'spectra-staged')" data-title="SPECTRA PHYSICS PROLITE DIODIDE" src="./assets/images/solutions/repair/cable.png">
+                  <img onclick="changeSlide(event, 'spectra-staged')" data-title="SPECTRA PHYSICS PROLITE DIODIDE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SPECTRA PHYSICS PROLITE DIODE.png">
+                  <img onclick="changeSlide(event, 'spectra-staged')" data-title="SPECTRA PHYSICS PROLITE DIODIDE" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/cable.png">
                 </div>
               </div>
 
@@ -220,26 +225,26 @@
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="wafer-staged" src="./assets/images/solutions/repair/SONY BS65.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="wafer-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SONY BS65.png">
                   </div>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'wafer-staged')" src="./assets/images/solutions/repair/SONY BS65.png">
-                  <img onclick="changeSlide(event, 'wafer-staged')" src="./assets/images/solutions/repair/SONY BS76.png">
+                  <img onclick="changeSlide(event, 'wafer-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SONY BS65.png">
+                  <img onclick="changeSlide(event, 'wafer-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/SONY BS76.png">
                 </div>
               </div>
               </div> -->
               <!-- Image block ends here  -->
 
 
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
 
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Valves </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Valves </h5>
             <div class="exp-content">
               <div>
                 <!-- Image block starts here -->
@@ -249,13 +254,13 @@
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img  class="highlight-image" onclick="zoomStaged(event)" id="ckd-staged" src="./assets/images/solutions/repair/CKD Valve (4c001, VYX-0245-VALVE, KF-80) copy.png">
+                    <img  class="highlight-image" onclick="zoomStaged(event)" id="ckd-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/CKD Valve (4c001, VYX-0245-VALVE, KF-80) copy.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">CKD Valve (4c001, VYX-0245-VALVE, KF-80)</h6>
                 </div>
                 <div class="non-staged mb-4">
-                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="CKD Valve (4c001, VYX-0245-VALVE, KF-80)" src="./assets/images/solutions/repair/CKD Valve (4c001, VYX-0245-VALVE, KF-80) copy.png">
-                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="CKD Valve (9I001, VEC-VH8-X0111, KF80)" src="./assets/images/solutions/repair/CKD Valve (9I001, VEC-VH8-X0111, KF80).png">
+                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="CKD Valve (4c001, VYX-0245-VALVE, KF-80)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/CKD Valve (4c001, VYX-0245-VALVE, KF-80) copy.png">
+                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="CKD Valve (9I001, VEC-VH8-X0111, KF80)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/CKD Valve (9I001, VEC-VH8-X0111, KF80).png">
                 </div>
               </div>
                 </div>
@@ -268,32 +273,32 @@
                                   <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="gate-staged" src="./assets/images/solutions/repair/Gate-Valve/Auto Manual Gate Valve copy 2.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="gate-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Auto Manual Gate Valve copy 2.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">Auto Manual Gate Valve</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Auto Manual Gate Valve" src="./assets/images/solutions/repair/Gate-Valve/Auto Manual Gate Valve copy 2.png">
-                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Butterfly Gate Valve" src="./assets/images/solutions/repair/Gate-Valve/Butterfly Gate Valve.png">
-                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Door Standard Gate Valve" src="./assets/images/solutions/repair/Gate-Valve/Door Standard Gate Valve.png">
-                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Double Housing Gate Valve" src="./assets/images/solutions/repair/Gate-Valve/Double Housing Gate Valve.png">
-                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Protection Gate Valve" src="./assets/images/solutions/repair/Gate-Valve/Protection Gate Valve.png">
-                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Rectangular Gate Valve" src="./assets/images/solutions/repair/Gate-Valve/Rectangular Gate Valve.png">
+                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Auto Manual Gate Valve" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Auto Manual Gate Valve copy 2.png">
+                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Butterfly Gate Valve" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Butterfly Gate Valve.png">
+                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Door Standard Gate Valve" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Door Standard Gate Valve.png">
+                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Double Housing Gate Valve" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Double Housing Gate Valve.png">
+                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Protection Gate Valve" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Protection Gate Valve.png">
+                  <img onclick="changeSlide(event, 'gate-staged')" data-title="Rectangular Gate Valve" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Gate-Valve/Rectangular Gate Valve.png">
                 </div>
               </div>
                 </div>
                 <!-- Image block ends here  -->
 
               </div>
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
 
 
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Pumps </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Pumps </h5>
             <div class="exp-content">
               <div class="text">
                 <!-- Image block starts here -->
@@ -303,13 +308,13 @@
                                   <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="chemical-staged" src="./assets/images/solutions/repair/Pumps/pump 1.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="chemical-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/pump 1.png">
                   </div>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'chemical-staged')" src="./assets/images/solutions/repair/Pumps/pump 1.png">
-                  <img onclick="changeSlide(event, 'chemical-staged')" src="./assets/images/solutions/repair/Pumps/pump 2.png">
-                  <img onclick="changeSlide(event, 'chemical-staged')" src="./assets/images/solutions/repair/Pumps/pump 3.png">
+                  <img onclick="changeSlide(event, 'chemical-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/pump 1.png">
+                  <img onclick="changeSlide(event, 'chemical-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/pump 2.png">
+                  <img onclick="changeSlide(event, 'chemical-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/pump 3.png">
                 </div>
               </div>
                 </div>
@@ -322,49 +327,49 @@
                                   <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="turbo-staged" src="./assets/images/solutions/repair/Pumps/Ebara Turbo Pumps (ET300WS, ET450WS.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="turbo-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/Ebara Turbo Pumps (ET300WS, ET450WS.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">EBARA TURBO PUMPS</h6>
                 </div>
                 <div class="non-staged mb-4">
-                  <img onclick="changeSlide(event, 'turbo-staged')" data-title="EBARA TURBO PUMPS"  src="./assets/images/solutions/repair/Pumps/Ebara Turbo Pumps (ET300WS, ET450WS.png">
-                  <img onclick="changeSlide(event, 'turbo-staged')" data-title="PFEIFFER TURBO PUMPS (TMH 064, TPH 1201)" src="./assets/images/solutions/repair/Pumps/Pfeiffer Turbo Pumps (TMH 064, TPH 1201).png">
-                  <img onclick="changeSlide(event, 'turbo-staged')" data-title="TURBOVAC - TMP SERIES (TMP50, TW250)" src="./assets/images/solutions/repair/Pumps/Turbovac - TMP Series (TMP50, TW250).png">
+                  <img onclick="changeSlide(event, 'turbo-staged')" data-title="EBARA TURBO PUMPS"  src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/Ebara Turbo Pumps (ET300WS, ET450WS.png">
+                  <img onclick="changeSlide(event, 'turbo-staged')" data-title="PFEIFFER TURBO PUMPS (TMH 064, TPH 1201)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/Pfeiffer Turbo Pumps (TMH 064, TPH 1201).png">
+                  <img onclick="changeSlide(event, 'turbo-staged')" data-title="TURBOVAC - TMP SERIES (TMP50, TW250)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/Pumps/Turbovac - TMP Series (TMP50, TW250).png">
                 </div>
               </div>
                 </div>
                 <!-- Image block ends here  -->
 
 
-              </div><a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              </div><a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Robots </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Robots </h5>
             <div class="exp-content">
               <div class="text">
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image" onclick="zoomStaged(event)" id="robots-staged" src="./assets/images/solutions/repair/robots/MAG.png">
+                    <img class="highlight-image" onclick="zoomStaged(event)" id="robots-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/MAG.png">
                   </div>
                   <h6 class="slide-title mb-5" style="color: white !important;">MAGNATRAN 7.1  (BROOKS)</h6>
                 </div>
                 <div class="non-staged mb-4">
-                  <img onclick="changeSlide(event, 'robots-staged')" data-title="MAGNATRAN 7.1  (BROOKS)" src="./assets/images/solutions/repair/robots/MAG.png">
-                  <img onclick="changeSlide(event, 'robots-staged')" data-title="CONTROLLER &  PRE-ALIGNER  (BROOKS)" src="./assets/images/solutions/repair/robots/CONTROLLER.png">
-                  <img onclick="changeSlide(event, 'robots-staged')" data-title="ARMSET" src="./assets/images/solutions/repair/robots/AMRSET.png">
-                  <img onclick="changeSlide(event, 'robots-staged')" data-title="MAGNATRAN 7.1 ARMSET (BROOKS)" src="./assets/images/solutions/repair/robots/MAG ARM.png">
-                  <img onclick="changeSlide(event, 'robots-staged')" data-title="RR710 SERIES (RORZE)" src="./assets/images/solutions/repair/robots/RORZE.png">
-                  <img onclick="changeSlide(event, 'robots-staged')" data-title="VTM SERIES" src="./assets/images/solutions/repair/robots/VTM.png">
+                  <img onclick="changeSlide(event, 'robots-staged')" data-title="MAGNATRAN 7.1  (BROOKS)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/MAG.png">
+                  <img onclick="changeSlide(event, 'robots-staged')" data-title="CONTROLLER &  PRE-ALIGNER  (BROOKS)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/CONTROLLER.png">
+                  <img onclick="changeSlide(event, 'robots-staged')" data-title="ARMSET" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/AMRSET.png">
+                  <img onclick="changeSlide(event, 'robots-staged')" data-title="MAGNATRAN 7.1 ARMSET (BROOKS)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/MAG ARM.png">
+                  <img onclick="changeSlide(event, 'robots-staged')" data-title="RR710 SERIES (RORZE)" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/RORZE.png">
+                  <img onclick="changeSlide(event, 'robots-staged')" data-title="VTM SERIES" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/repair/robots/VTM.png">
                 </div>
               </div>
                 <!-- <h3 class="mb-3 mt-4"></h3>  -->
 
-                <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                  <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+                <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                  <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
                 </a>
               </div>
             </div>
@@ -433,10 +438,10 @@
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>

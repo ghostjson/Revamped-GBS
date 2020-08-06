@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Urban
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,22 +14,22 @@
 
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/solutions.css" />
   <!-- Lightbox -->
-  <link rel="stylesheet" href="./assets/css/lightbox.min.css">
-  <script defer src="./assets/js/lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/lightbox.min.css">
+  <script defer src="<?= get_stylesheet_directory_uri() ?>/assets/js/lightbox-plus-jquery.min.js"></script>
   <style>
     h6 {
       font-weight: bold;
@@ -55,17 +60,17 @@
 
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a href="/about.html">ABOUT US</a>
+        <a href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" class="active" id="solution">SOLUTIONS</a>
@@ -75,19 +80,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="active">
@@ -95,43 +100,43 @@
           </li>
           <div class="ts-sub">
             <li class="sub active">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news">NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="articles">ARTICLES</a>
           </li>
           <li class="">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
 
   <section class="about-banner">
     <div class="container-fluid">
-      <div class="row upper-about-banner" style="background-image: url('./assets/images/ts-urban-banner.png')">
+      <div class="row upper-about-banner" style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/ts-urban-banner.png')">
         <div class="col heading mb-5">
           <h2>SOLUTIONS</h2>
         </div>
@@ -165,7 +170,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Urban Vehicles </h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Urban Vehicles </h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -179,14 +184,14 @@
               <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="buses-staged" src="./assets/images/solutions/ts-bus.jpg">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="buses-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ts-bus.jpg">
                   </div>
                   
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'buses-staged')" src="./assets/images/solutions/ts-bus.jpg">
-                  <img onclick="changeSlide(event, 'buses-staged')" src="./assets/images/solutions/urban/Coach Van.jpg">
-                  <img onclick="changeSlide(event, 'buses-staged')" src="./assets/images/solutions/urban/RV.jpeg">
+                  <img onclick="changeSlide(event, 'buses-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/ts-bus.jpg">
+                  <img onclick="changeSlide(event, 'buses-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/Coach Van.jpg">
+                  <img onclick="changeSlide(event, 'buses-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/RV.jpeg">
                 </div>
               </div>
               
@@ -197,17 +202,17 @@
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="vcu-staged" src="./assets/images/solutions/urban/dvr.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="vcu-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/dvr.png">
                    
                   </div>
                   <h6 class="slide-title mb-5">IN VEHICLE DVR</h6>
 
                 </div>
                 <div class="non-staged" id="vcu1">
-                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="IN VEHICLE DVR" src="./assets/images/solutions/urban/dvr.png">
-                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="In-Vehicle 7” Monitor" src="./assets/images/solutions/urban/MONITOR.png">
-                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="FRONT CAMERA" src="./assets/images/solutions/urban/CAMERA.png">
-                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="REAR CAMERA" src="./assets/images/solutions/urban/CAMERA-1.png">
+                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="IN VEHICLE DVR" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/dvr.png">
+                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="In-Vehicle 7” Monitor" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/MONITOR.png">
+                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="FRONT CAMERA" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/CAMERA.png">
+                  <img onclick="changeSlide(event, 'vcu-staged')" data-title="REAR CAMERA" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/CAMERA-1.png">
                 </div>
               </div>
               </div>
@@ -225,13 +230,13 @@
                 </div>
                 </div>
               </div>
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Fire Truck</h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Fire Truck</h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -246,14 +251,14 @@
                 <div class="slide-set-large">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="truck-staged" src="./assets/images/solutions/urban/firetruck/1. fire.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="truck-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/firetruck/1. fire.png">
                   </div>
                   
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'truck-staged')" src="./assets/images/solutions/urban/firetruck/1. fire.png">
-                  <img onclick="changeSlide(event, 'truck-staged')" src="./assets/images/solutions/urban/firetruck/2. fire.png">
-                  <img onclick="changeSlide(event, 'truck-staged')" src="./assets/images/solutions/urban/firetruck/3. fire.png">
+                  <img onclick="changeSlide(event, 'truck-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/firetruck/1. fire.png">
+                  <img onclick="changeSlide(event, 'truck-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/firetruck/2. fire.png">
+                  <img onclick="changeSlide(event, 'truck-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/firetruck/3. fire.png">
                 </div>
               </div>
 
@@ -264,15 +269,15 @@
                 <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="ckd-staged" src="./assets/images/solutions/urban/dvr.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="ckd-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/dvr.png">
                   </div>
                   <h6 class="slide-title mb-5">IN VEHICLE DVR</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="IN VEHICLE DVR" src="./assets/images/solutions/urban/dvr.png">
-                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="In-Vehicle 7” Monitor" src="./assets/images/solutions/urban/MONITOR.png">
-                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="FRONT CAMERA" src="./assets/images/solutions/urban/CAMERA.png">
-                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="REAR CAMERA" src="./assets/images/solutions/urban/CAMERA-1.png">
+                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="IN VEHICLE DVR" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/dvr.png">
+                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="In-Vehicle 7” Monitor" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/MONITOR.png">
+                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="FRONT CAMERA" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/CAMERA.png">
+                  <img onclick="changeSlide(event, 'ckd-staged')" data-title="REAR CAMERA" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/CAMERA-1.png">
                 </div>
               </div>
               </div>
@@ -290,13 +295,13 @@
                 </div>
               </div>
               
-              <a style="margin-left: 35px;" href="./assets/downloads/GBS PDF placeholder.pdf">
-                <img style="width: 300px;" src="./assets/images/pdf-download.png" alt="">
+              <a style="margin-left: 35px;" href="<?= get_stylesheet_directory_uri() ?>/assets/downloads/GBS PDF placeholder.pdf">
+                <img style="width: 300px;" src="<?= get_stylesheet_directory_uri() ?>/assets/images/pdf-download.png" alt="">
               </a>
             </div>
         </div>
         <div class="col-12">
-          <h5 class="expand"> <img src="./assets/images/triangle.png" width="30px"> Refuse Truck</h4>
+          <h5 class="expand"> <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px"> Refuse Truck</h5>
             <div class="exp-content">
               <div class="text">
                 <p>
@@ -307,13 +312,13 @@
                 <div class="slide-set-large">
                 <div class="thumbnail slide-large">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="refuse-staged" src="./assets/images/solutions/urban/refuse/1. refuse.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="refuse-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/refuse/1. refuse.png">
                   </div>
                 </div>
                 <div class="non-staged icon-large">
-                  <img onclick="changeSlide(event, 'refuse-staged')" src="./assets/images/solutions/urban/refuse/1. refuse.png">
-                  <img onclick="changeSlide(event, 'refuse-staged')" src="./assets/images/solutions/urban/refuse/2. refuse.png">
-                  <img onclick="changeSlide(event, 'refuse-staged')" src="./assets/images/solutions/urban/refuse/3. refuse.png">
+                  <img onclick="changeSlide(event, 'refuse-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/refuse/1. refuse.png">
+                  <img onclick="changeSlide(event, 'refuse-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/refuse/2. refuse.png">
+                  <img onclick="changeSlide(event, 'refuse-staged')" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/refuse/3. refuse.png">
                 </div>
               </div>
 
@@ -326,15 +331,15 @@
              <div class="slide-set">
                 <div class="thumbnail">
                   <div class="staged">
-                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="vcu1-staged" src="./assets/images/solutions/urban/dvr.png">
+                    <img class="highlight-image"  style="margin-top: 0px;" onclick="zoomStaged(event)" id="vcu1-staged" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/dvr.png">
                   </div>
                   <h6 class="slide-title mb-5">IN VEHICLE DVR</h6>
                 </div>
                 <div class="non-staged">
-                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="IN VEHICLE DVR" src="./assets/images/solutions/urban/dvr.png">
-                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="In-Vehicle 7” Monitor" src="./assets/images/solutions/urban/MONITOR.png">
-                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="FRONT CAMERA" src="./assets/images/solutions/urban/CAMERA.png">
-                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="REAR CAMERA" src="./assets/images/solutions/urban/CAMERA-1.png">
+                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="IN VEHICLE DVR" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/dvr.png">
+                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="In-Vehicle 7” Monitor" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/MONITOR.png">
+                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="FRONT CAMERA" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/CAMERA.png">
+                  <img onclick="changeSlide(event, 'vcu1-staged')" data-title="REAR CAMERA" src="<?= get_stylesheet_directory_uri() ?>/assets/images/solutions/urban/CAMERA-1.png">
                 </div>
               </div>
               </div>
@@ -413,10 +418,10 @@
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>

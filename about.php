@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: About
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,32 +13,32 @@
   <title>GBS</title>
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 </head>
 
 <body>
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a class="active" href="/about.html">ABOUT US</a>
+        <a class="active" href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" id="solution">SOLUTIONS</a>
@@ -43,19 +48,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="/sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="/sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="/sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="/sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="/sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="">
@@ -63,36 +68,36 @@
           </li>
           <div class="ts-sub">
             <li class="sub">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="/ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="/ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="/ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="/ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="/portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news">NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="/articles">ARTICLES</a>
           </li>
           <li class="">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="/career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
@@ -136,13 +141,13 @@
       <div class="row">
         <div class="col box-vision">
           <div class="thumbnail">
-            <img src="./assets/images/visison.jpg" alt="vision" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/visison.jpg" alt="vision" />
           </div>
           <div class="heading-vision">
             <h2>Our Vision</h2>
           </div>
           <div class="content-vision">
-            <img src="./assets/images/triangle.png" alt="icon" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" alt="icon" />
             <p>
               To be the leading end-to-end solution provider in the
               semiconductor and specialty transport industry.
@@ -151,13 +156,13 @@
         </div>
         <div class="col box-vision">
           <div class="thumbnail">
-            <img src="./assets/images/vision2.jpg" alt="vision2" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vision2.jpg" alt="vision2" />
           </div>
           <div class="heading-vision">
             <h2>Our Mission</h2>
           </div>
           <div class="content-vision">
-            <img src="./assets/images/triangle.png" alt="icon" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" alt="icon" />
             <p>
               To create sustainability by leveraging on our network and
               partners’ core competencies to develop the expertise to support
@@ -178,7 +183,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <img src="./assets/images/our_approch.jpg" alt="approach" />
+          <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/our_approch.jpg" alt="approach" />
         </div>
       </div>
       <div class="row">
@@ -228,19 +233,19 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
           <div class="image">
-            <img src="./assets/images/cre-1.jpg" alt="" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/cre-1.jpg" alt="" />
           </div>
           <p>2015 Quality Award (ST Kinetics)</p>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
           <div class="image">
-            <img src="./assets/images/cre-2.jpg" alt="" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/cre-2.jpg" alt="" />
           </div>
           <p>Sales Achievement Award (EKK Semicon Components, Inc)</p>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
           <div class="image">
-            <img src="./assets/images/cre-3.jpg" alt="" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/cre-3.jpg" alt="" />
           </div>
           <p>
             Partnerships for Capability Transformation (PACT) – By Spring
@@ -249,7 +254,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
           <div class="image">
-            <img src="./assets/images/cre-4.jpg" alt="" />
+            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/cre-4.jpg" alt="" />
           </div>
           <p>
             1st local refurbishment facility for Heater Pedestal processes
@@ -284,7 +289,7 @@
           </ul>
         </div>
         <div class="col-md-11">
-          <img src="./assets/images/map.jpg" alt="map" />
+          <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/map.jpg" alt="map" />
         </div>
         <div class="col-md-auto"></div>
       </div>
@@ -293,10 +298,10 @@
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>
