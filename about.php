@@ -112,24 +112,27 @@ Template Name: About
       <div class="row lower-about-banner">
         <div class="col">
           <div class="container">
-            <p>
-              Established in 2003, GBS (Singapore) Pte Ltd have built a
-              reputation for our technical expertise and our ability to
-              develop solution-based products and services to meet our
-              customers' needs. This is made possible with our in-depth
-              knowledge of advanced technologies.
-            </p>
-            <p>
-              Over the years, we have grown to become a major supplier for
-              Semiconductor, Defence industries and its adjacent markets. We
-              value-add to our customers by developing a range of customised
-              solutions and applications to meet their needs.
-            </p>
-            <p>
-              With our extensive network of business partners, we can
-              complement our expertise with their competencies and deliver the
-              best solutions to our customers.
-            </p>
+
+              <?php echo get_theme_mod('about-customization-description'); ?>
+
+<!--            <p>-->
+<!--              Established in 2003, GBS (Singapore) Pte Ltd have built a-->
+<!--              reputation for our technical expertise and our ability to-->
+<!--              develop solution-based products and services to meet our-->
+<!--              customers' needs. This is made possible with our in-depth-->
+<!--              knowledge of advanced technologies.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              Over the years, we have grown to become a major supplier for-->
+<!--              Semiconductor, Defence industries and its adjacent markets. We-->
+<!--              value-add to our customers by developing a range of customised-->
+<!--              solutions and applications to meet their needs.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              With our extensive network of business partners, we can-->
+<!--              complement our expertise with their competencies and deliver the-->
+<!--              best solutions to our customers.-->
+<!--            </p>-->
           </div>
         </div>
       </div>
@@ -252,15 +255,15 @@ Template Name: About
             Singapore & ST Kinetics
           </p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="image">
-            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/cre-4.jpg" alt="" />
-          </div>
-          <p>
-            1st local refurbishment facility for Heater Pedestal processes
-            with support from Spring Singapore in 2010
-          </p>
-        </div>
+<!--        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">-->
+<!--          <div class="image">-->
+<!--            <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/images/cre-4.jpg" alt="" />-->
+<!--          </div>-->
+<!--          <p>-->
+<!--            1st local refurbishment facility for Heater Pedestal processes-->
+<!--            with support from Spring Singapore in 2010-->
+<!--          </p>-->
+<!--        </div>-->
       </div>
     </div>
   </section>

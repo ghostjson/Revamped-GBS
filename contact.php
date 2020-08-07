@@ -2,7 +2,10 @@
 /*
 Template Name: Contact
 */
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -123,13 +126,15 @@ Template Name: Contact
 
         <div class="row">
           <div class="col">
-            <form>
+            <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+                <input name='action' type="hidden" value='contact_form'>
               <div class="form-group">
                 <label for="name">Name</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
+                  name="name"
                   aria-describedby="name"
                   placeholder="Enter Name"
                 />
@@ -140,6 +145,7 @@ Template Name: Contact
                   type="text"
                   class="form-control"
                   id="contact"
+                  name="phone"
                   aria-describedby="contact"
                   placeholder="Enter Your Contact Number"
                 />
@@ -150,6 +156,7 @@ Template Name: Contact
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   aria-describedby="email"
                   placeholder="Enter email"
                 />
@@ -160,13 +167,14 @@ Template Name: Contact
                   type="text"
                   class="form-control"
                   id="company"
+                  name="company"
                   aria-describedby="company"
                   placeholder="Enter Your Company"
                 />
               </div>
               <div class="form-group">
                 <label for="service">Topic/Service of Interest</label>
-                <select class="form-control" id="service">
+                <select class="form-control" name="service" id="service">
                   <option>Semiconductor Solutions</option>
                   <option>Transport Solutions</option>
                   <option>Other</option>

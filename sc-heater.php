@@ -242,35 +242,36 @@ Template Name: Heater
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" />
-            </div>
-            <div class="form-group">
-              <label for="contact">Contact Number</label>
-              <input type="text" class="form-control" id="contact" aria-describedby="contact"
-                placeholder="Enter Your Contact Number" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email" />
-            </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" class="form-control" id="company" aria-describedby="company"
-                placeholder="Enter Your Company" />
-            </div>
-            <div class="form-group">
-              <label for="service">Topic/Service of Interest</label>
-              <select class="form-control" id="service">
-                <option>Semiconductor Solutions</option>
-                <option>Transport Solutions</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+                <input name='action' type="hidden" value='contact_form'>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" name="phone" class="form-control" id="contact" aria-describedby="contact"
+                           placeholder="Enter Your Contact Number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" class="form-control" id="company" aria-describedby="company"
+                           placeholder="Enter Your Company">
+                </div>
+                <div class="form-group">
+                    <label for="service">Topic/Service of Interest</label>
+                    <select name="service" class="form-control" id="service">
+                        <option>Semiconductor Solutions</option>
+                        <option>Transport Solutions</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
       </div>
     </div>

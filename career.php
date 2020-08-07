@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Career
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,19 +14,19 @@
   <title>GBS</title>
 
   <!-- Jqeury -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
   <!-- Common Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/common.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
   <!-- About Page Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/solutions.css" />
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/solutions.css" />
 
   <style>
     body {
@@ -111,17 +117,17 @@
 <body>
   <nav class="menu">
     <div class="close-btn">
-      <img src="./assets/icons/times-solid.svg" alt="hide" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
     </div>
     <div class="show-btn">
-      <img src="./assets/icons/bars-solid.svg" alt="show" />
+      <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
     </div>
     <ul>
       <li>
-        <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+        <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
       </li>
       <li>
-        <a href="/about.html">ABOUT US</a>
+        <a href="/about">ABOUT US</a>
       </li>
       <li>
         <a href="#" id="solution">SOLUTIONS</a>
@@ -131,19 +137,19 @@
           </li>
           <div class="sc-sub">
             <li class="sub">
-              <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+              <a href="/sc-sealing">SEALING SOLUTIONS</a>
             </li>
             <li class="sub">
-              <a href="sc-heater.html">HEATER PEDESTALS</a>
+              <a href="/sc-heater">HEATER PEDESTALS</a>
             </li>
             <li class="sub">
-              <a href="sc-optics.html">OPTICS & COATINGS</a>
+              <a href="/sc-optics">OPTICS & COATINGS</a>
             </li>
             <li class="sub">
-              <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+              <a href="/sc-repair">REPAIR & REFURBISHMENT</a>
             </li>
             <li class="sub active">
-              <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+              <a href="/sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
             </li>
           </div>
           <li class="">
@@ -151,43 +157,43 @@
           </li>
           <div class="ts-sub">
             <li class="sub">
-              <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+              <a href="/ts-urban">URBAN & MUNICIPAL VEHICLES</a>
             </li>
             <li class="sub">
-              <a href="ts-log.html">LOGISTICS</a>
+              <a href="/ts-log">LOGISTICS</a>
             </li>
             <li class="sub">
-              <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+              <a href="/ts-mil">MILITARY & HOMELAND SECURITY</a>
             </li>
             <li class="sub">
-              <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+              <a href="/ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
             </li>
           </div>
         </ul>
       </li>
       <li>
-        <a href="portfolio.html">OUR PORTFOLIO</a>
+        <a href="/portfolio">OUR PORTFOLIO</a>
       </li>
       <li>
         <a href="#" id="news" class="active" >NEWS & UPDATES</a>
         <ul class="sub-news">
           <li>
-            <a href="articles.html">ARTICLES</a>
+            <a href="/articles">ARTICLES</a>
           </li>
           <li class="active">
-            <a href="career.html">CAREER OPPORTUNITIES</a>
+            <a href="/career">CAREER OPPORTUNITIES</a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="/contact.html">CONTACT US</a>
+        <a href="/contact">CONTACT US</a>
       </li>
     </ul>
   </nav>
 
   <section class="about-banner">
     <div class="container-fluid">
-      <div class="row upper-about-banner" style="background-image: url('./assets/images/career-banner.jpg');">
+      <div class="row upper-about-banner" style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/career-banner.jpg');">
         <div class="col heading">
           <h2>NEWS AND UPDATE</h2>
         </div>
@@ -208,88 +214,122 @@
   <section class="expansion">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <h5 class="expand">
-            <img src="./assets/images/triangle.png" width="30px" /> Customer
-            Service Representative
-          </h5>
-          <div class="exp-content">
-            <div class="text">
-              <img src="./assets/images/office.jpg" alt="">
-              <p class="salary">$17 - $19/hour</p>
-              <p class="description">
-                Delight customers by making every interaction an unforgettable
-                experience, whether it's through inbound calls, emails and/or
-                chats.
-              </p>
-              <a class="apply" href="#">Apply Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <h5 class="expand">
-            <img src="./assets/images/triangle.png" width="30px" /> Call
-            Center Representative
-          </h5>
-          <div class="exp-content">
-            <div class="text">
-              <img src="./assets/images/office.jpg" alt="">
-              <p class="salary">$8 - $10/hour</p>
 
-              <p class="description">
-                We are looking to fill positions in our virtual call centers.
-                Whether you thrive in a sales environment, are looking to help
-                others or are brand new to the call center industry, we have a
-                place for you!
-              </p>
-              <p class="salary">
-                We offer:
-              </p>
-              <ul>
-                <li>Weekly Pay</li>
-                <li>Weekly BONUS</li>
-                <li>Medical benefits for full-time employees!</li>
-                <li>Interactive daily communication with your team!</li>
-              </ul>
+          <?php
 
-              <p class="salary">
-                MINIMUM REQUIREMENTS:
-              </p>
-              <ul>
-                <li>High-Speed – 15 Mbs or higher ISP Subscription</li>
-                <li>ISP must be highly stable with no packet loss</li>
-                <li>
-                  f others in home are using internet, minimums will need to
-                  be higher
-                </li>
-                <li>
-                  WiFi may be used but many users will need a Wired connection
-                  to router based off their home usage and speeds
-                </li>
-                <li>Web Cam & Speaker</li>
-                <li>USB Headset</li>
-                <li>
-                  A willingness to learn and a home office or quiet work space
-                </li>
-                <li>
-                  Customer Service/Sales skills helpful, but not necessary!
-                </li>
-              </ul>
+          $blog = new WP_Query(['post_type' => 'career']);
 
-              <a class="apply" href="#">Apply Now</a>
-            </div>
-          </div>
-        </div>
+          while($blog->have_posts()):
+
+          $blog->the_post();
+          ?>
+
+              <div class="col-12">
+                  <h5 class="expand">
+                      <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/triangle.png" width="30px" /> <?php the_title() ?>
+                  </h5>
+                  <div class="exp-content">
+                      <div class="text">
+                          <?php if(has_post_thumbnail()): ?>
+                            <img src="<?php the_post_thumbnail_url(); ?>" style="margin-bottom: 20px" alt="">
+                          <?php endif; the_content(); ?>
+
+                          <!--                          <p class="salary">$17 - $19/hour</p>-->
+<!--                          <p class="description">-->
+<!--                              Delight customers by making every interaction an unforgettable-->
+<!--                              experience, whether it's through inbound calls, emails and/or-->
+<!--                              chats.-->
+<!--                          </p>-->
+<!--                          <a class="apply" href="#">Apply Now</a>-->
+                      </div>
+                  </div>
+              </div>
+
+          <?php endwhile; ?>
+
+
+<!--        <div class="col-12">-->
+<!--          <h5 class="expand">-->
+<!--            <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/images/triangle.png" width="30px" /> Customer-->
+<!--            Service Representative-->
+<!--          </h5>-->
+<!--          <div class="exp-content">-->
+<!--            <div class="text">-->
+<!--              <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/images/office.jpg" alt="">-->
+<!--              <p class="salary">$17 - $19/hour</p>-->
+<!--              <p class="description">-->
+<!--                Delight customers by making every interaction an unforgettable-->
+<!--                experience, whether it's through inbound calls, emails and/or-->
+<!--                chats.-->
+<!--              </p>-->
+<!--              <a class="apply" href="#">Apply Now</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-12">-->
+<!--          <h5 class="expand">-->
+<!--            <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/images/triangle.png" width="30px" /> Call-->
+<!--            Center Representative-->
+<!--          </h5>-->
+<!--          <div class="exp-content">-->
+<!--            <div class="text">-->
+<!--              <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/images/office.jpg" alt="">-->
+<!--              <p class="salary">$8 - $10/hour</p>-->
+<!---->
+<!--              <p class="description">-->
+<!--                We are looking to fill positions in our virtual call centers.-->
+<!--                Whether you thrive in a sales environment, are looking to help-->
+<!--                others or are brand new to the call center industry, we have a-->
+<!--                place for you!-->
+<!--              </p>-->
+<!--              <p class="salary">-->
+<!--                We offer:-->
+<!--              </p>-->
+<!--              <ul>-->
+<!--                <li>Weekly Pay</li>-->
+<!--                <li>Weekly BONUS</li>-->
+<!--                <li>Medical benefits for full-time employees!</li>-->
+<!--                <li>Interactive daily communication with your team!</li>-->
+<!--              </ul>-->
+<!---->
+<!--              <p class="salary">-->
+<!--                MINIMUM REQUIREMENTS:-->
+<!--              </p>-->
+<!--              <ul>-->
+<!--                <li>High-Speed – 15 Mbs or higher ISP Subscription</li>-->
+<!--                <li>ISP must be highly stable with no packet loss</li>-->
+<!--                <li>-->
+<!--                  f others in home are using internet, minimums will need to-->
+<!--                  be higher-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  WiFi may be used but many users will need a Wired connection-->
+<!--                  to router based off their home usage and speeds-->
+<!--                </li>-->
+<!--                <li>Web Cam & Speaker</li>-->
+<!--                <li>USB Headset</li>-->
+<!--                <li>-->
+<!--                  A willingness to learn and a home office or quiet work space-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                  Customer Service/Sales skills helpful, but not necessary!-->
+<!--                </li>-->
+<!--              </ul>-->
+<!---->
+<!--              <a class="apply" href="#">Apply Now</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </div>
   </section>
 
   <!-- JS libraries -->
   <!-- Jquery -->
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
   <!-- Common js -->
-  <script src="./assets/js/common.js"></script>
+  <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
 </body>
 
 </html>

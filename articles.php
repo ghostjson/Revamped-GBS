@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Articles
+*/
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,16 +14,16 @@
     <title>GBS</title>
 
     <!-- Jqeury -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/bootstrap.min.css" />
 
     <!-- Common Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/common.css" />
 
     <!-- About Page Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri() ?>/assets/css/about.css" />
 
     <style>
       body {
@@ -68,17 +74,17 @@
   <body>
     <nav class="menu">
       <div class="close-btn">
-        <img src="./assets/icons/times-solid.svg" alt="hide" />
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/times-solid.svg" alt="hide" />
       </div>
       <div class="show-btn">
-        <img src="./assets/icons/bars-solid.svg" alt="show" />
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/bars-solid.svg" alt="show" />
       </div>
       <ul>
         <li>
-          <a href="/"><img src="./assets/images/logo.png" alt="logo" /></a>
+          <a href="/"><img src="<?= get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="logo" /></a>
         </li>
         <li>
-          <a href="/about.html">ABOUT US</a>
+          <a href="/about">ABOUT US</a>
         </li>
         <li>
           <a href="#" id="solution">SOLUTIONS</a>
@@ -88,19 +94,19 @@
             </li>
             <div class="sc-sub">
               <li class="sub">
-                <a href="sc-sealing.html">SEALING SOLUTIONS</a>
+                <a href="/sc-sealing">SEALING SOLUTIONS</a>
               </li>
               <li class="sub">
-                <a href="sc-heater.html">HEATER PEDESTALS</a>
+                <a href="/sc-heater">HEATER PEDESTALS</a>
               </li>
               <li class="sub">
-                <a href="sc-optics.html">OPTICS & COATINGS</a>
+                <a href="/sc-optics">OPTICS & COATINGS</a>
               </li>
               <li class="sub">
-                <a href="sc-repair.html">REPAIR & REFURBISHMENT</a>
+                <a href="/sc-repair">REPAIR & REFURBISHMENT</a>
               </li>
               <li class="sub">
-                <a href="sc-asset.html">ASSET ENHANCEMENT SOLUTIONS</a>
+                <a href="/sc-asset">ASSET ENHANCEMENT SOLUTIONS</a>
               </li>
             </div>
             <li class="">
@@ -108,36 +114,36 @@
             </li>
             <div class="ts-sub">
               <li class="sub">
-                <a href="ts-urban.html">URBAN & MUNICIPAL VEHICLES</a>
+                <a href="/ts-urban">URBAN & MUNICIPAL VEHICLES</a>
               </li>
               <li class="sub">
-                <a href="ts-log.html">LOGISTICS</a>
+                <a href="/ts-log">LOGISTICS</a>
               </li>
               <li class="sub">
-                <a href="ts-mil.html">MILITARY & HOMELAND SECURITY</a>
+                <a href="/ts-mil">MILITARY & HOMELAND SECURITY</a>
               </li>
               <li class="sub">
-                <a href="ts-adas.html">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
+                <a href="/ts-adas">ADVANCED DRIVER-ASSISTANCE SYSTEMS (ADAS)</a>
               </li>
             </div>
           </ul>
         </li>
         <li>
-          <a href="portfolio.html">OUR PORTFOLIO</a>
+          <a href="/portfolio">OUR PORTFOLIO</a>
         </li>
         <li>
           <a href="#" id="news">NEWS & UPDATES</a>
           <ul class="sub-news">
             <li>
-              <a  class="active" href="articles.html">ARTICLES</a>
+              <a  class="active" href="/articles">ARTICLES</a>
             </li>
             <li class="">
-              <a href="career.html">CAREER OPPORTUNITIES</a>
+              <a href="/career">CAREER OPPORTUNITIES</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="/contact.html">CONTACT US</a>
+          <a href="/contact">CONTACT US</a>
         </li>
       </ul>
     </nav>
@@ -146,7 +152,7 @@
       <div class="container-fluid">
         <div
           class="row upper-about-banner"
-          style="background-image: url('./assets/images/news-banner.jpg');"
+          style="background-image: url('<?= get_stylesheet_directory_uri() ?>/assets/images/news-banner.jpg');"
         >
           <div class="col heading">
             <h2>NEWS AND UPDATE</h2>
@@ -167,96 +173,144 @@
 
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-12 mb-4">
-          <a target="_blank" href="blog-single.html">
-            <article class="">
-              <div class="image-container" style="padding: 0px 30px;;">
-                <img
-                  width="100%"
-                  src="./assets/images/article-image.jpg"
-                  alt=""
-                  style="margin: 0 auto;"
-                />
-              </div>
-              <h3 class="aritcle-heading">
-                Most Downloaded Materials Science in Semiconductor Processing
-                Articles
-              </h3>
-              <p class="article-description">
-                The most downloaded articles from Materials Science in
-                Semiconductor Processing in the last 90 days.
-              </p>
-              <div class="social-icons">
-                <a href="#">
-                  <img src="./assets/icons/facebook.svg" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/twitter.svg" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/linkedin.svg" alt="" />
-                </a>
-              </div>
-            </article>
-          </a>
-        </div>
-        <div class="col-md-12 mb-4">
-          <a href="#">
-            <article class="mt-4">
-              <h3 class="aritcle-heading">
-                Glass-assisted CVD growth of large-area MoS2, WS2 and MoSe2
-                monolayers on Si/SiO2 substrate
-              </h3>
-              <p class="article-description">
-                Gonca Uslu Özküçük | Cem Odacı | Ezgi Şahin | Feridun Ay | Nihan
-                Kosku Perkgöz
-              </p>
-              <div class="social-icons">
-                <a href="#">
-                  <img src="./assets/icons/facebook.svg" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/twitter.svg" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/linkedin.svg" alt="" />
-                </a>
-              </div>
-            </article>
-          </a>
-        </div>
-        <div class="col-md-12 mb-4">
-          <a href="#">
-            <article class="mt-4">
-              <h3 class="aritcle-heading">
-                Nickel oxide nanoparticles: Synthesis and spectral studies of
-                interactions with glucose
-              </h3>
-              <p class="article-description">
-                M. El-Kemary | N. Nagy | I. El-Mehasseb
-              </p>
-              <div class="social-icons">
-                <a href="#">
-                  <img src="./assets/icons/facebook.svg" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/twitter.svg" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/icons/linkedin.svg" alt="" />
-                </a>
-              </div>
-            </article>
-          </a>
-        </div>
+
+
+
+            <?php
+
+            $blog = new WP_Query(['post_type' => 'post']);
+
+            while($blog->have_posts()) {
+
+                $blog->the_post();
+            ?>
+
+          <div class="col-md-12 mb-4">
+              <a target="_blank" href="<?php the_permalink(); ?>">
+                  <article class="">
+                      <div class="image-container" style="padding: 0px 30px;;">
+                          <img
+                                  width="100%"
+                                  src="<?php the_post_thumbnail_url(); ?>"
+                                  alt=""
+                                  style="margin: 0 auto;"
+                          />
+                      </div>
+                      <h3 class="aritcle-heading">
+                          <?php the_title(); ?>
+                      </h3>
+                      <p class="article-description">
+                          <?php
+                          $content = apply_filters( 'the_content', get_the_content() );
+                          $content = wp_strip_all_tags($content);
+                          echo wp_trim_words($content, 20)?>
+                      </p>
+                      <div class="social-icons">
+                          <a href="#">
+                              <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/facebook.svg" alt="" />
+                          </a>
+                          <a href="#">
+                              <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/twitter.svg" alt="" />
+                          </a>
+                          <a href="#">
+                              <img src="<?= get_stylesheet_directory_uri() ?>/assets/icons/linkedin.svg" alt="" />
+                          </a>
+                      </div>
+                  </article>
+              </a>
+          </div>
+
+          <?php } ?>
+<!--        <div class="col-md-12 mb-4">-->
+<!--          <a target="_blank" href="blog-single">-->
+<!--            <article class="">-->
+<!--              <div class="image-container" style="padding: 0px 30px;;">-->
+<!--                <img-->
+<!--                  width="100%"-->
+<!--                  src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/images/article-image.jpg"-->
+<!--                  alt=""-->
+<!--                  style="margin: 0 auto;"-->
+<!--                />-->
+<!--              </div>-->
+<!--              <h3 class="aritcle-heading">-->
+<!--                Most Downloaded Materials Science in Semiconductor Processing-->
+<!--                Articles-->
+<!--              </h3>-->
+<!--              <p class="article-description">-->
+<!--                The most downloaded articles from Materials Science in-->
+<!--                Semiconductor Processing in the last 90 days.-->
+<!--              </p>-->
+<!--              <div class="social-icons">-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/facebook.svg" alt="" />-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/twitter.svg" alt="" />-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/linkedin.svg" alt="" />-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="col-md-12 mb-4">-->
+<!--          <a href="#">-->
+<!--            <article class="mt-4">-->
+<!--              <h3 class="aritcle-heading">-->
+<!--                Glass-assisted CVD growth of large-area MoS2, WS2 and MoSe2-->
+<!--                monolayers on Si/SiO2 substrate-->
+<!--              </h3>-->
+<!--              <p class="article-description">-->
+<!--                Gonca Uslu Özküçük | Cem Odacı | Ezgi Şahin | Feridun Ay | Nihan-->
+<!--                Kosku Perkgöz-->
+<!--              </p>-->
+<!--              <div class="social-icons">-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/facebook.svg" alt="" />-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/twitter.svg" alt="" />-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/linkedin.svg" alt="" />-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="col-md-12 mb-4">-->
+<!--          <a href="#">-->
+<!--            <article class="mt-4">-->
+<!--              <h3 class="aritcle-heading">-->
+<!--                Nickel oxide nanoparticles: Synthesis and spectral studies of-->
+<!--                interactions with glucose-->
+<!--              </h3>-->
+<!--              <p class="article-description">-->
+<!--                M. El-Kemary | N. Nagy | I. El-Mehasseb-->
+<!--              </p>-->
+<!--              <div class="social-icons">-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/facebook.svg" alt="" />-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/twitter.svg" alt="" />-->
+<!--                </a>-->
+<!--                <a href="#">-->
+<!--                  <img src="--><?//= get_stylesheet_directory_uri() ?><!--/assets/icons/linkedin.svg" alt="" />-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--          </a>-->
+<!--        </div>-->
       </div>
     </div>
 
     <!-- JS libraries -->
     <!-- Jquery -->
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/jquery-3.2.1.min.js"></script>
 
     <!-- Common js -->
-    <script src="./assets/js/common.js"></script>
+    <script src="<?= get_stylesheet_directory_uri() ?>/assets/js/common.js"></script>
   </body>
 </html>
