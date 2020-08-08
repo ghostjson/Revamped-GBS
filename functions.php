@@ -101,3 +101,7 @@ function contact_form(){
 add_action( 'admin_post_nopriv_contact_form', 'contact_form' );
 add_action('admin_post_contact_form', 'contact_form');
 
+//add pages to admin panel
+
+include_once 'admin/contact.php';
+
